@@ -11,8 +11,13 @@
 
 .nav-container{
     background-color: var(--neutralgray-200);
+    overflow: hidden;
 }
 
+.nav-container a:hover{
+    background-color: #F3FF4A;
+
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -70,31 +75,45 @@ img{
     border-radius: 3px;
 }
 
+.nav-active{
+    transform: translateX(0%);
+}
 
 @media screen and (max-width:768px){
     
+    .burger{
+        display: block;
+
+    }
+
     body{
         overflow-x: hidden;
     }
     
     
     .nav-links{
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 92vh;
-        top: 8vh;
+        top: 10vh;
         background-color: var(--neutralgray-200);
         display:flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+        background-color:var(--neutralgray-200);
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+    
 
     }
 
+    .kontakt-btn{
+        all: unset;
+    }
     
-    .nav-links{
+    .nav-links li {
         opacity: 0;
     }
     
@@ -103,9 +122,6 @@ img{
     .burger{
         display: block;
     }
-
-    .nav-active{
-        transform: translateX(0%);
-    }
     
 }
+
