@@ -1,9 +1,14 @@
-/* GENERAL */
+/* 1. GENERAL */
 
 :root {
     --neutralgray-200:#E4E6EA;
     --neutralgray-700: #374151;
     --neutralgray-900: #161E2E;
+    --mainyellow-1: #F3FF4A;
+    --mainyellow-2: #E8C841;
+    --mainyellow-3: #FFBB54;
+    --mainorange-4: #E87441;
+    --mainorange-5: #FF4847;
 }
 
 * {
@@ -12,6 +17,7 @@
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Roboto slab', sans-serif;
+    background-color: var(--neutralgray-200);
     
 }
 
@@ -29,20 +35,22 @@ img {
     max-width: 100%;
 }
 
+/* 2. CLASS STYLING */
 
-/* CLASS 
-STYLING
- */
-
-
-.nav-container {
-    background-color: var(--neutralgray-200);
+ .topbar{
+    display: flex;
+    height: 0.5vh;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 0.5vh;
+    background-color: var(--mainorange-4)
+    
 }
 
 .logo {
     display:flex;    
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     
 }
 
@@ -83,16 +91,22 @@ STYLING
     border-radius: 3px;
 }
 
+/* 3. BODY */
 
-/* BODY */
+.headline {
+    font-size: 3em;
+    color: var(--neutralgray-700);
+    display: flex;
+    padding-top: 15vh;
+}
 
-
-.section-title {
-    font-size: 64;
+.sub-headline {
+    font-size: 1.5em;
+    font-weight: normal;
     color: var(--neutralgray-700);
 }
 
-
+/* 4. MEDIA QUERIES */
 
 @media screen and (max-width:768px){
     
@@ -100,28 +114,20 @@ STYLING
         overflow-x: hidden;
     }
     
-    
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: var(--neutralgray-200);
+        height: 100vh;
+        top: 12vh;
+        background-color: white;
         display:flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
 
     }
-
-    
-    .nav-links li{
-        opacity: 0;
-    }
-    
-    
 
     .burger {
         display: block;
