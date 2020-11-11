@@ -1,6 +1,6 @@
 /* 1. GENERAL */
 
-:root {
+* {
     --neutralgray-200:#E4E6EA;
     --neutralgray-700: #374151;
     --neutralgray-900: #161E2E;
@@ -11,13 +11,19 @@
     --mainorange-5: #FF4847;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing:inherit;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Roboto slab', sans-serif;
-    background-color: var(--neutralgray-200);
+    background-color: var(--neutlgray-200);
     
 }
 
@@ -27,32 +33,36 @@ nav {
     justify-content: space-between;
     align-items: center;
     min-height: 10vh;
-    width: 90%;
     margin: auto;
+    padding: 0 5% 0 5%;
 }
 
 img {
-    max-width: 100%;
     height: auto;
-  }
+}
 
 /* 2. CLASS STYLING */
 
- .topbar{
-    display: flex;
-    height: 0.5vh;
+.site-wrapper{
+    background-color: var(--neutralgray-200);
+    max-width: 1200px;
     width: 100%;
-    margin-top: auto;
-    margin-bottom: 0.5vh;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+ .topbar {
+    height: 10px;
     background-color: var(--mainyellow-1)
     
 }
 
 
 .logo {
-    display:flex;    
     height: 100px;
     width: 100px;
+    padding: 0.5rem;
     
 }
 
@@ -98,7 +108,9 @@ img {
 .hero {
     display: flex;
     flex-direction: column;
-    padding: 10vh 0 0 5vh;
+    padding: 20vh 0 0 5vh;
+    background-color: var(--neutralgray-200);
+    z-index: 2;
 }
 
 .headline {
@@ -112,11 +124,28 @@ img {
     color: var(--neutralgray-700);
 }
 
+
+.test {
+    display: flex;
+}
+
 .heroimg {
     width: 551px;
     height: 771.5px;
-    display: block;
-    
+    position: absolute;
+    top:35%;
+    left:40%;
+    z-index: 3;
+   
+}
+
+.hero-bg-rectangle {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    top:70%;
+    background: linear-gradient(267.12deg, #E4E6EA -14.56%, rgba(255, 255, 255, 0) 46.04%), #6B7280;
+    z-index: 3;
 }
 
 /* 4. MEDIA QUERIES */
