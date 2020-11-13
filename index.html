@@ -5,31 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <title>Pistostav</title>
 </head>
 <body>
-    <div class="site-wrapper">
-        <header class="nav-container">
-            <div class="topbar"></div>
-            <nav>
+    <header>
+        <div class="topbar"></div>
+        <div class="container">
+            <nav class="nav">
                 <img class="logo" src="css/logo.png" alt="Pistostav Logo">
                 
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#">Služby</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">O nás</a></li>
-                    <li><a class="kontakt-btn" href="#">Kontakt</a></li>
+                <div class="hamburger-menu" id="hamburger menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Domov</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Služby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">O nás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link kontakt-btn" href="#">Kontakt</a>
+                    </li>
                 </ul>
 
-                <div class="burger" id="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
+                
                     
             </nav>
-        </header>
-        <main>
+        </div>  
+    </header>
+    <main>
             <section class="hero">
                 <h1 class="headline">Vyškové práce</h1>
             
@@ -38,7 +52,7 @@
 
             <section class="test"></section>
                 <div class="hero-bg-rectangle"></div>
-                <img class="heroimg" src="css/pat-a-mat.png" alt="Hero Image Pat a Mat">
+                <img class="heroimg" src="" alt="">
             
 
             <section class="service selector">
@@ -47,10 +61,8 @@
             </section>
         </main>
 
-    </div>
+        <footer></footer>
 
-    <footer></footer>
-
- 
-    <script src="app.js"></script>
+    
+        <script src="app.js"></script>
 </body>

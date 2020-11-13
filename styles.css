@@ -1,182 +1,156 @@
-/* 1. GENERAL */
+/* CUSTOM PROPERTIES */
 
-* {
+:root{
+    --neutralgray-50:#F9FAFB;
+    --neutralgray-100:#F4F5F7;
     --neutralgray-200:#E4E6EA;
+    --neutralgray-300:#D2D6DC;
+    --neutralgray-400:#9FA6B2;
+    --neutralgray-500: #6B7280;
+    --neutralgray-600: #4B5563;
     --neutralgray-700: #374151;
+    --neutralgray-800: #252F3F;
     --neutralgray-900: #161E2E;
     --mainyellow-1: #F3FF4A;
     --mainyellow-2: #E8C841;
     --mainyellow-3: #FFBB54;
     --mainorange-4: #E87441;
     --mainorange-5: #FF4847;
+    --mainbrown-6: #7A624E;
+    maingreen-7: #3AA781;
 }
+
+/* RESETS */
 
 *,
 *::before,
-*::after {
-    box-sizing:inherit;
-}
-
-* {
+*::after{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Roboto slab', sans-serif;
-    background-color: var(--neutlgray-200);
-    
 }
 
-nav {
+/* GLOBAL STYLES */
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Roboto slab', sans-serif;
+    background-color: var(--neutralgray-200);
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+
+ul{
+    list-style: none;
+}
+
+/* REUSABLE STYLES  */
+
+.container{
+    width: 100%;
+    max-width: 75rem;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+/* HEADER STYLES */
+
+.nav{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 10vh;
     margin: auto;
-    padding: 0 5% 0 5%;
 }
 
-img {
-    height: auto;
-}
-
-/* 2. CLASS STYLING */
-
-.site-wrapper{
-    background-color: var(--neutralgray-200);
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    
-}
-
- .topbar {
+.topbar{
     height: 10px;
+    margin-bottom: 0.5em;
     background-color: var(--mainyellow-1)
-    
 }
-
 
 .logo {
-    height: 100px;
-    width: 100px;
-    padding: 0.5rem;
-    
+    height: 80px;
+    width: 80px;
 }
 
-.nav-links { 
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    list-style: none;
-}
-
-.nav-links a {
-    color: #161E2E;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.kontakt-btn {
-    border: 3px solid var(--neutralgray-900);
-    box-sizing: border-box;
-    border-radius: 28px;
-    padding: 10px 20px 10px 20px;
-}
-
-.kontakt-btn:hover {
-    background: #F3FF4A;
-}
-
-.burger {
-    display: none;
+.hamburger-menu{
+    font-size: 2rem;
+    color: var(--neutralgray-900);
     cursor: pointer;
+    position: relative;
+    z-index: 100;
 }
 
-.burger div {
-    width: 50px;
-    height: 6px;
-    background-color: var(--neutralgray-900);
-    margin: 5px;
-    border-radius: 3px;
+.hamburger-menu .fa-times{
+    position: fixed;
+    display: none;
+}
+
+.nav-list{
+    position: fixed; 
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--neutralgray-700);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.nav-link{
+    display: block;
+    color: var(--neutralgray-50);
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1rem;
 }
 
 /* 3. BODY */
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    padding: 20vh 0 0 5vh;
-    background-color: var(--neutralgray-200);
-    z-index: 2;
-}
-
-.headline {
+.headline{
     font-size: 3em;
     color: var(--neutralgray-700);
+    margin-top: 10rem;
 }
 
-.sub-headline {
+.sub-headline{
     font-size: 1.5em;
     font-weight: normal;
     color: var(--neutralgray-700);
 }
 
-
-.test {
-    display: flex;
-}
-
-.heroimg {
-    width: 551px;
-    height: 771.5px;
-    position: absolute;
-    top:35%;
-    left:40%;
-    z-index: 3;
-   
-}
-
-.hero-bg-rectangle {
-    position: absolute;
-    width: 100%;
-    height: 15vh;
-    top:70%;
-    background: linear-gradient(267.12deg, #E4E6EA -14.56%, rgba(255, 255, 255, 0) 46.04%), #6B7280;
-    z-index: 3;
-}
-
 /* 4. MEDIA QUERIES */
 
-@media screen and (max-width:768px){
-    
-    body{
-        overflow-x: hidden;
-    }
-    
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 100vh;
-        top: 12vh;
-        background-color: white;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        transform: translateX(100%);
-
+/* @media screen and (min-width:768px){
+        
+    .kontakt-btn {
+        border: 2px solid var(--neutralgray-900);
+        box-sizing: border-box;
+        border-radius: 28px;
+        padding: 10px 20px;
     }
 
-    .burger {
-        display: block;
+    .kontakt-btn:hover {
+        background: #F3FF4A;
     }
 
-    .nav-active {
-        transform: translateX(0%);
+    .hamburger-menu {
+        display: none;
     }
+
     
-}
+} */
