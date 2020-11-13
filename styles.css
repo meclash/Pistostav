@@ -17,7 +17,11 @@
     --mainorange-4: #E87441;
     --mainorange-5: #FF4847;
     --mainbrown-6: #7A624E;
-    maingreen-7: #3AA781;
+    --maingreen-7: #3AA781;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-bold:700;
+    --fw-black:900;
 }
 
 /* RESETS */
@@ -37,7 +41,7 @@ html{
 }
 
 body{
-    font-family: "Roboto Slab", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     background-color: var(--neutralgray-200);
 }
 
@@ -72,7 +76,7 @@ ul{
 }
 
 .topbar{
-    height: 10px;
+    height: 5px;
     margin-bottom: 0.5em;
     background-color: var(--mainyellow-1)
 }
@@ -92,6 +96,7 @@ ul{
 
 .hamburger-menu .fa-times{
     display: none;
+    color: var(--neutralgray-200);
 }
 
 .menu-open .hamburger-menu .fa-times{
@@ -109,7 +114,7 @@ ul{
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--neutralgray-600);
+    background-color: var(--neutralgray-700);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -126,7 +131,7 @@ ul{
 
 .nav-link{
     display: block;
-    color: var(--neutralgray-50);
+    color: var(--neutralgray-200);
     font-weight: bold;
     font-size: 1.5rem;
     letter-spacing: 2px;
@@ -138,18 +143,22 @@ ul{
     opacity: 40%;
 }
 
-/* 3. BODY */
+/* 3. HERO STYLES */
 
 .headline{
     font-size: 3em;
+    font-weight:var(--fw-black);
     color: var(--neutralgray-700);
-    margin-top: 10rem;
+    margin-top: 2rem;
+    text-transform: var(--fw-bold);
+    text-align: center;
 }
 
-.sub-headline{
+.subheadline{
     font-size: 1.5em;
-    font-weight: normal;
+    font-weight: var(--fw-medium);
     color: var(--neutralgray-700);
+    text-align: center;
 }
 
 /* 4. MEDIA QUERIES */
