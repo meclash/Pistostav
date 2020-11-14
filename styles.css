@@ -87,7 +87,7 @@ ul{
 }
 
 .logo:hover{
-
+    cursor: pointer;
 }
 
 .hamburger-menu{
@@ -147,6 +147,15 @@ ul{
     opacity: 40%;
 }
 
+.kontakt-btn {
+    border: 2px solid var(--neutralgray-200);
+    box-sizing: border-box;
+    border-radius: 28px;
+    padding: 0.5rem 2rem;
+    margin-top: 5rem;
+}
+
+
 /* 3. HERO STYLES */
 
 .headline{
@@ -181,22 +190,21 @@ ul{
 
 }
 
-
 .rectangle{
-    position: absolute;
-    bottom: 6rem;
-    height: 6rem;
+    position: relative;
+    bottom: 30vh;
+    height: 15vh;
     width: 100%;
     background: linear-gradient(271.08deg, #E4E6EA -14.83%, #374151 68.23%);
     z-index: 1;
 }
 
 .rectangle2{
-    position: absolute;
-    bottom: 0rem;
-    height: 8rem;
+    position: relative;
+    bottom:30vh;
+    height:15vh;
     width: 100%;
-    background: red;
+    background: var(--neutralgray-200);
     z-index: 3;
 }
 
@@ -210,7 +218,7 @@ ul{
     
     
     .kontakt-btn {
-        border: 2px solid var(--neutralgray-900);
+        border: 2px solid var(--neutralgray-200);
         box-sizing: border-box;
         border-radius: 28px;
         padding: 10px 20px;
