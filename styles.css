@@ -67,7 +67,6 @@ ul{
 /* HEADER STYLES */
 
 .nav{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -160,7 +159,7 @@ ul{
 
 /* 3. HERO STYLES */
 
-.herosection{
+.main-heading{
     display: flex;
     flex-direction: column;
     background-color: var(--neutralgray-200);
@@ -173,6 +172,8 @@ ul{
     margin-top: 1.5rem;
     text-align: center;
     line-height: 0.9;
+    padding:0 5%;
+
 }
 
 .subheadline{
@@ -180,35 +181,35 @@ ul{
     font-weight: var(--fw-normal);
     text-align: center;
 }
+ 
 
-
-
-.heroimage{
-    max-width: 551px;
-    width: 100%;
-    align-self: center;
-    height: auto;
-    z-index: 2;
+.heroimage__container{
+    display: flex;
+    flex-direction: column;
     position: relative;
-
 }
 
-.rectangle{
-    position: relative;
-    bottom: 30vh;
-    height: 20vh;
+.heroimage{
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.heroimage__rectangle{
+    position: absolute;
+    height: 30%;
+    bottom: 0;
     width: 100%;
     background: linear-gradient(271.08deg, #E4E6EA -14.83%, #374151 68.23%);
-    z-index: 1;
+    z-index: -1;
 }
 
 /* SERVICE SECTION */
 
 .rectangle2{
-    position: relative;
-    bottom:30vh;
-    height:20vh;
     width: 100%;
+    height: 150px;
     background-color: var(--neutralgray-200);
     z-index: 3;
     font-size: 2rem;
