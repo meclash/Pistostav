@@ -61,7 +61,6 @@ ul{
 .container{
     width: 100%;
     max-width: 75rem;
-    padding: 0 5%;
     margin: 0 auto;
 }
 
@@ -74,17 +73,19 @@ ul{
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    padding: 0 5%;
+    background-color: var(--neutralgray-200);
 }
 
 .topbar{
     height: 5px;
-    margin-bottom: 0.5em;
     background-color: var(--mainyellow-1)
 }
 
 .logo {
     height: 60px;
     width: 60px;
+    margin-top: 1rem;
 }
 
 .logo:hover{
@@ -159,6 +160,13 @@ ul{
 
 /* 3. HERO STYLES */
 
+.herosection{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutralgray-200);
+}
+
+
 .headline{
     font-size: 3em;
     font-weight:var(--fw-black);
@@ -174,10 +182,6 @@ ul{
 }
 
 
-.herosection{
-    display: flex;
-    flex-direction: column;
-}
 
 .heroimage{
     max-width: 551px;
@@ -198,26 +202,32 @@ ul{
     z-index: 1;
 }
 
+/* SERVICE SECTION */
+
 .rectangle2{
     position: relative;
     bottom:30vh;
     height:20vh;
     width: 100%;
-    background: var(--neutralgray-200);
+    background-color: var(--neutralgray-200);
     z-index: 3;
     font-size: 2rem;
     font-weight: var(--fw-bold);
     display: flex;
-    align-self: center;
     align-items: center;
     justify-content: center;
 }
 
 
 
+.service-cards{
+    display: flex;
+    flex-direction: column;
+}
 
-
-
+.service-card1{
+    
+}
 
 
 
