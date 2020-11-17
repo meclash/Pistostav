@@ -13,15 +13,22 @@
     --neutralgray-900: #161E2E;
     --mainyellow-1: #F3FF4A;
     --mainyellow-2: #E8C841;
-    --mainyellow-3: #FFBB54;
+    --mainyoranege3: #FFBB54;
     --mainorange-4: #E87441;
-    --mainorange-5: #FF4847;
+    --mainorred-5: #FF4847;
     --mainbrown-6: #7A624E;
     --maingreen-7: #3AA781;
     --fw-normal: 400;
     --fw-medium: 500;
     --fw-bold:700;
     --fw-black:900;
+    --text-small: 0.875rem;
+    --text-base: 1rem;
+    --text-large: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 2rem;
+    --text-4xl:3rem;
 }
 
 /* RESETS */
@@ -46,14 +53,33 @@ body{
     color: var(--neutralgray-700);
 }
 
-a{
-    text-decoration: none;
-    color:inherit;
+section{
+    padding: 1rem 1rem;
 }
-
 
 ul{
     list-style: none;
+}
+
+h1{
+    font-size: var(--text-4xl);
+    font-weight: var(--fw-black);
+}
+
+h2{
+    font-size: var(--text-3xl);
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+
+p{
+    font-weight: var(--fw-normal);
+    margin:1rem 0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
 }
 
 /* REUSABLE STYLES  */
@@ -64,6 +90,19 @@ ul{
     margin: 0 auto;
 }
 
+.underline-text{
+    text-decoration: underline;
+    text-decoration-color: var(--mainyellow-1);
+    text-decoration-thickness: 0.5rem;
+}
+
+.underline-title {
+    text-decoration: underline;
+    text-decoration-color: var(--mainyellow-1);
+    text-decoration-thickness: 0.5rem;
+    text-underline-offset: 0.5rem;
+}
+
 /* HEADER STYLES */
 
 .nav{
@@ -72,8 +111,9 @@ ul{
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 0 5%;
+    padding: 0 1rem;
     background-color: var(--neutralgray-200);
+    margin-top: 0.5rem;
 }
 
 .topbar{
@@ -84,7 +124,6 @@ ul{
 .logo {
     height: 60px;
     width: 60px;
-    margin-top: 1rem;
 }
 
 .logo:hover{
@@ -129,7 +168,8 @@ ul{
     transition: opacity 0.25s;
 }
 
-.menu-open .nav-list{
+
+.menu-open .nav-list{  
     opacity: 1;
     transform: scale(1) 
 }
@@ -157,23 +197,18 @@ ul{
 }
 
 
-/* 3. HERO STYLES */
+/* 3. HEADING */
 
 .main-heading{
-    display: flex;
-    flex-direction: column;
     background-color: var(--neutralgray-200);
+    padding: 0 1rem;
+    margin-top: 1.5rem;
 }
 
 
 .headline{
-    font-size: 3em;
-    font-weight:var(--fw-black);
-    margin-top: 1.5rem;
     text-align: center;
-    line-height: 0.9;
-    padding:0 5%;
-
+    line-height: 0.85;
 }
 
 .subheadline{
@@ -183,17 +218,21 @@ ul{
 }
  
 
+/* HERO SECTION */
+
 .heroimage__container{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: auto;
 }
 
 .heroimage{
     max-width: 550px;
     width: 100%;
-    height: auto;
+    height:auto;
     margin: auto;
+    z-index: 2;
 }
 
 .heroimage__rectangle{
@@ -202,26 +241,57 @@ ul{
     bottom: 0;
     width: 100%;
     background: linear-gradient(271.08deg, #E4E6EA -14.83%, #374151 68.23%);
-    z-index: -1;
+    z-index: 1;
 }
 
-/* SERVICE SECTION */
 
-.rectangle2{
-    width: 100%;
-    height: 150px;
+/* ABOUT US SECTION */
+
+.about-us{
     background-color: var(--neutralgray-200);
-    z-index: 3;
-    font-size: 2rem;
-    font-weight: var(--fw-bold);
+}
+
+
+.about-us__image{
+    max-width: 550px;
+    width: 100%;
+    height:auto;
+    margin: auto;
+    border: 3px solid #FFBB54
+}
+
+.about-us__description{
+    font-weight: var(--fw-normal);
+    text-align: left;
+    color: var(--neutralgray-600);
+   
+}
+
+/* WHY US SECTION */
+
+.why-us{
+    background-color: var(--neutralgray-700);
+}
+
+.why-us__title{
+    color: var(--neutralgray-100);
+}
+
+.why-us__description{
+    color: var(--neutralgray-200);
+}
+
+/* SERVICES SECTION */
+
+.services{
+    width: 100%;
+    background-color: var(--neutralgray-200);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
-.service-cards{
+.service__cards{
     display: flex;
     flex-direction: column;
 }

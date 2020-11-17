@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <title>Pistostav</title>
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="topbar"></div>
         <div class="container">
             <nav class="nav">
@@ -45,8 +45,8 @@
     
     <main>
         <div class="main-heading">
-            <h1 class="headline">Makáme ako na vlastnom</h1>
-            <h2 class="subheadline">Rýchlo. Spoľahlivo. Precízne.</h2>   
+            <h1 class="headline container">Makáme ako na vlastnom</h1>
+            <div class="subheadline container">Rýchlo. Spoľahlivo. Precízne.</h2></div>
         </div>
 
         <div class="heroimage__container">
@@ -54,18 +54,32 @@
             <div class="heroimage__rectangle"></div>
         </div>
 
-        <div class="container rectangle2">Služby</div>
-        
-        <div class="service-cards container">
-            <div class="service-card1"></div>
-            <div class="service-card"></div>
-            <div class="service-card"></div>
-            <div class="service-card"></div>
-            <div class="service-card"></div>
-            <div class="service-card"></div>
-        </div>
+        <section class="about-us">
+            <h2 class="about-us__title underline-title">O nás</h3>
+            <p class="about-us__description">Realizujeme komplexnú škálu služieb v oblastiach údržby zelene, správy a údržby verejných priestranstiev a špecializovaných služieb akými sú výškové práce, rizikové pílenie stromov, arboristika.<br></p>
+            <img class="about-us__image" alt="team" src="/images/about-us.jpg">
+
+        </section>
+
+        <section class="why-us">
+            <h2 class="why-us__title underline-title">Prečo my</h2>
+            <p class="why-us__description">garantujeme vždy precízne odvedenú prácu sme Vám k dispozícii 24/7 bez príplatkov za víkendy a sviatky spoľahlivosť a dodržiavanie termínov je pre nás prioritou bezpečnosť pri práci a prevoze materiálu je neodmysliteľnou súčasťou našej práce</p>
+        </section>
+
+        <section class="services">
+            <h2 class="services__title underline-title">Služby</h3>
+            <div class="service__cards">
+                <div class="service__card1"></div>
+                <div class="service__card"></div>
+                <div class="service__card"></div>
+                <div class="service__card"></div>
+                <div class="service__card"></div>
+                <div class="service__card"></div>
+            </div>
+        </section>
 
     </main>
 
     <script src="app.js"></script>
 </body>
+</html>
