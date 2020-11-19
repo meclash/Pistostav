@@ -41,7 +41,9 @@
     padding: 0px;
 }
 
-/* GLOBAL STYLES */
+/*****
+GLOBAL STYLES
+****/
 
 html{
     font-size: 16px;
@@ -74,7 +76,7 @@ h2{
 
 p{
     font-weight: var(--fw-normal);
-    margin:1rem 0;
+    margin: 1rem 0;
 }
 
 a{
@@ -82,7 +84,9 @@ a{
     color:inherit;
 }
 
-/* REUSABLE STYLES  */
+/*****
+REUSABLE STYLES
+*****/
 
 .container{
     width: 100%;
@@ -103,7 +107,9 @@ a{
     text-underline-offset: 0.5rem;
 }
 
-/* HEADER STYLES */
+/*****
+HEADER STYLES
+*****/
 
 .nav{
     display: flex;
@@ -197,7 +203,9 @@ a{
 }
 
 
-/* 3. HEADING */
+/*****
+HEADING
+*****/
 
 .main-heading{
     background-color: var(--neutralgray-200);
@@ -218,16 +226,18 @@ a{
 }
  
 
-/* HERO SECTION */
+/*****
+HERO SECTION
+*****/
 
-.heroimage__container{
+.hero{
     display: flex;
     flex-direction: column;
     position: relative;
     width: auto;
 }
 
-.heroimage{
+.hero__image{
     max-width: 550px;
     width: 100%;
     height:auto;
@@ -235,7 +245,7 @@ a{
     z-index: 2;
 }
 
-.heroimage__rectangle{
+.hero__rectangle{
     position: absolute;
     height: 30%;
     bottom: 0;
@@ -245,29 +255,31 @@ a{
 }
 
 
-/* ABOUT US SECTION */
+/*****
+ABOUT US SECTION
+*****/
 
 .about-us{
     background-color: var(--neutralgray-200);
 }
-
 
 .about-us__image{
     max-width: 550px;
     width: 100%;
     height:auto;
     margin: auto;
-    border: 3px solid #FFBB54
+    border: 3px dashed #FFBB54;
 }
 
 .about-us__description{
-    font-weight: var(--fw-normal);
     text-align: left;
     color: var(--neutralgray-600);
    
 }
 
-/* WHY US SECTION */
+/*****
+ WHY US SECTION
+*****/
 
 .why-us{
     background-color: var(--neutralgray-700);
@@ -277,11 +289,32 @@ a{
     color: var(--neutralgray-100);
 }
 
+
+.why-us__benefits{
+    display:flex;
+    flex-direction: column;
+}
+
+.benefits__title{
+    color: var(--neutralgray-200);
+}
+
+
+.benefits__checkmark{
+    height: 24px;
+    width: 24px;
+
+}
+
+
+
 .why-us__description{
     color: var(--neutralgray-200);
 }
 
-/* SERVICES SECTION */
+/* 
+SERVICES SECTION
+ */
 
 .services{
     width: 100%;
