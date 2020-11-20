@@ -13,7 +13,7 @@
     --neutralgray-900: #161E2E;
     --mainyellow-1: #F3FF4A;
     --mainyellow-2: #E8C841;
-    --mainyoranege3: #FFBB54;
+    --mainyoranege-3: #FFBB54;
     --mainorange-4: #E87441;
     --mainorred-5: #FF4847;
     --mainbrown-6: #7A624E;
@@ -41,27 +41,33 @@
     padding: 0px;
 }
 
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
 /*****
 GLOBAL STYLES
 ****/
 
 html{
-    font-size: 16px;
 }
 
 body{
+    font-size: 16px;
     font-family: 'Roboto Slab', sans-serif;
-    background-color: var(--neutralgray-200);
-    color: var(--neutralgray-700);
+  
 }
 
 section{
     padding: 1rem 1rem;
 }
 
-ul{
-    list-style: none;
-}
 
 h1{
     font-size: var(--text-4xl);
@@ -79,10 +85,6 @@ p{
     margin: 1rem 0;
 }
 
-a{
-    text-decoration: none;
-    color:inherit;
-}
 
 /*****
 REUSABLE STYLES
@@ -111,6 +113,10 @@ REUSABLE STYLES
 HEADER STYLES
 *****/
 
+.header{
+    background-color: var(--neutralgray-200);
+}
+
 .nav{
     display: flex;
     flex-direction: row;
@@ -118,7 +124,7 @@ HEADER STYLES
     align-items: center;
     margin: auto;
     padding: 0 1rem;
-    background-color: var(--neutralgray-200);
+
     margin-top: 0.5rem;
 }
 
@@ -209,14 +215,15 @@ HEADING
 
 .main-heading{
     background-color: var(--neutralgray-200);
-    padding: 0 1rem;
-    margin-top: 1.5rem;
-}
+    color: var(--neutralgray-700);
+    padding: 1.5rem 1rem ;
 
+}
 
 .headline{
     text-align: center;
     line-height: 0.85;
+
 }
 
 .subheadline{
@@ -231,6 +238,7 @@ HERO SECTION
 *****/
 
 .hero{
+    background-color: var(--neutralgray-200);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -261,6 +269,7 @@ ABOUT US SECTION
 
 .about-us{
     background-color: var(--neutralgray-200);
+    color: var(--neutralgray-700)
 }
 
 .about-us__image{
@@ -268,7 +277,7 @@ ABOUT US SECTION
     width: 100%;
     height:auto;
     margin: auto;
-    border: 3px dashed #FFBB54;
+    border: 3px dashed #ff6700;
 }
 
 .about-us__description{
@@ -290,25 +299,26 @@ ABOUT US SECTION
 }
 
 
-.why-us__benefits{
+/* BENEFITS */
+
+.benefits{
     display:flex;
     flex-direction: column;
 }
 
+.benefits__icon{
+    color: var(--mainorange-4);
+    height: 2em;
+    width: 2em;
+}
+
 .benefits__title{
     color: var(--neutralgray-200);
+
+    font-size: var(--text-large);
 }
 
-
-.benefits__checkmark{
-    height: 24px;
-    width: 24px;
-
-}
-
-
-
-.why-us__description{
+.benefits__description{
     color: var(--neutralgray-200);
 }
 
