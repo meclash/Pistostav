@@ -94,7 +94,7 @@ REUSABLE STYLES
 *****/
 
 .container{
-    /* width: 100%; */
+    width: 100%;
     max-width: 75rem;
     margin: auto;
 }
@@ -122,8 +122,8 @@ HEADER STYLES
 *****/
 
 .intro-bg{
-    background-image: url(../images/hero-bg3.webp);
-    /* background-attachment: fixed; */
+    background-image: url(../images/hero-blurred.webp);
+    background-attachment: fixed;
     background-position: center;
     background-size:cover; 
     background-repeat: no-repeat;
@@ -132,7 +132,6 @@ HEADER STYLES
 }
 
 .header{
-    /* background-color: var(--neutralgray-200); */
     overflow: hidden;
 }
 
@@ -143,7 +142,6 @@ HEADER STYLES
     align-items: center;
     margin: auto;
     padding: 0.5rem 1rem 0 1rem;
-    /* background-color: var(--neutralgray-200); */
 }
 
 .topbar{
@@ -236,7 +234,6 @@ HEADING
 }
 
 .main-heading{
-    /* background-color: var(--neutralgray-200); */
     color: var(--neutralgray-700);
     padding: 1.5rem 1rem ;
 
@@ -261,7 +258,7 @@ HERO SECTION
 *****/
 
 .hero{
-    /* background-color: var(--neutralgray-200); */
+    min-height: 20rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -291,34 +288,33 @@ ABOUT US SECTION
 *****/
 
 .about-us{
-    background-image: url(../images/about-us-bg.webp);
-    background-attachment: fixed;
-    background-position: center;
-    background-size:cover; 
-    background-repeat: no-repeat;
+    background-color: var(--neutralgray-200);
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-
 
 }
 
 .about-us__title{
-    color: var(--neutralgray-200);
+    color: var(--neutralgray-700);
+}
+
+.about-us__icons{
+
 }
 
 .about-us__description{
-    color: var(--neutralgray-200);
+    color: var(--neutralgray-700);
     margin-bottom: 2rem; 
     max-width: 30rem;
+    text-align: center;
 }
 
 .about-us__image{
     display: block;
-    max-width: 480px;
+    position: relative;
     width: 100%;
-    margin: auto;
-    padding: 0;
 
 }
 
@@ -328,7 +324,9 @@ BENEFITS
 *****/
 
 .benefits{
+    position: relative;
     background-color: var(--neutralgray-700);
+    z-index: 2;
 }
 
 .benefits__heading{
@@ -356,6 +354,10 @@ BENEFITS
 
 .benefits__description{
     color: var(--neutralgray-200);
+}
+
+.benefits__image{
+    width: 100%;
 }
 
 /*****
@@ -395,15 +397,6 @@ SERVICES SECTION
 }
 
 
-
-.card__icon{
-    display: block;
-    position: relative;
-    bottom: 1.5rem;
-    align-self: center;
-}
-
-
 .card__body{
     z-index: 2;
     display: flex;
@@ -414,6 +407,7 @@ SERVICES SECTION
 
 
 .card__title{
+    margin-top: 1rem;
     font-size: var(--text-2xl);
     font-weight: var(--fw-medium);
     text-align: center;
