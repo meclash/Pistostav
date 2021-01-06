@@ -86,6 +86,7 @@ p{
 
 img{
     display: block;
+
 }
 
 
@@ -93,12 +94,12 @@ img{
 REUSABLE STYLES
 *****/
 
-.container{
-    width: 100%;
+.site-wrapper{
     max-width: 75rem;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
-
 
 .underline-title {
     text-decoration: underline;
@@ -112,28 +113,25 @@ REUSABLE STYLES
     flex-direction: column;
 }
 
-.padding--standard {
-    padding: 2rem 1rem;
+.section--primary{
+    background-color: var(--neutralgray-200);
+    color: var(--neutralgray-700);
 }
 
+
+.section--secondary{
+    background-color: var(--neutralgray-700);
+    color: var(--neutralgray-200);
+}
 
 /*****
 HEADER STYLES
 *****/
 
-.intro-bg{
-    background-image: url(../images/hero-blurred.webp);
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-size:cover; 
-    background-repeat: no-repeat;
-    
-    
-}
 
 .header{
     overflow: hidden;
+    background-color: var(--neutralgray-200);
 }
 
 .nav{
@@ -142,17 +140,12 @@ HEADER STYLES
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 0.5rem 1rem 0 1rem;
+    padding: 0.5rem 1rem;
 }
 
-.topbar{
-    height: 5px;
-    background-color: var(--mainyellow-1)
-}
-
-.logo {
-    height: 60px;
-    width: 60px;
+.logo{
+    height: 50px;
+    width: 50px;
 }
 
 .logo:hover{
@@ -220,99 +213,95 @@ HEADER STYLES
 .kontakt-btn {
     border: 3px solid var(--neutralgray-200);
     box-sizing: border-box;
-    border-radius: 30px;
+    border-radius: 8px;
     padding: 0.5rem 2rem;
     margin-top: 5rem;
 }
 
 
 /*****
-HEADING
-*****/
-
-.container--heading{
-    max-width: 23rem;
-}
-
-.main-heading{
-    color: var(--neutralgray-700);
-    padding: 1.5rem 1rem ;
-
-}
-
-.headline{
-    text-align: center;
-    line-height: 0.85;
-
-}
-
-.subheadline{
-    font-size: 1.25em;
-    font-weight: var(--fw-normal);
-    text-align: center;
-    margin-top: 0.5rem;
-}
- 
-
-/*****
 HERO SECTION
 *****/
 
 .hero{
-    min-height: 20rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: auto;
+    color: var(--neutralgray-700);
+    background-image: url(../images/hero-blurred.webp);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
+
+
+.hero__headline{
+    text-align: center;
+    line-height: 0.85;
+    margin: auto;
+    padding: 2rem 0 0.5rem 0;
+    max-width: 20rem;
+
+
+}
+
+.hero__subheadline{
+    font-size: 1.25em;
+    font-weight: var(--fw-normal);
+    margin: auto;
+    text-align: center;
+}
+ 
 
 .hero__image{
     max-width: 550px;
     width: 100%;
     height:auto;
     margin: auto;
-    z-index: 2;
+    filter:saturate(0%);
 }
-
-.hero__rectangle{
-    position: absolute;
-    height: 30%;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(271.08deg, #E4E6EA -14.83%, #374151 68.23%);
-    z-index: 1;
-}
-
 
 /*****
 ABOUT US SECTION
 *****/
 
 .about-us{
-    background-color: var(--neutralgray-200);
-    display: flex;
+    /* display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
 }
 
-.about-us__title{
-    color: var(--neutralgray-700);
+
+.about-us__icons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin:auto;
+    max-width: 20rem;
+}
+
+
+.about-us__icon{
 }
 
 
 .about-us__description{
     color: var(--neutralgray-700);
-    margin-bottom: 2rem; 
-    max-width: 30rem;
+    margin: auto;
     text-align: center;
+    max-width: 30rem;
+    padding:2rem 0 0;
+
 }
 
 .about-us__image{
     display: block;
     position: relative;
     width: 100%;
+    max-width: 40rem;
+    margin: auto;
 
 }
 
@@ -320,16 +309,6 @@ ABOUT US SECTION
 /*****
 BENEFITS
 *****/
-
-.benefits{
-    position: relative;
-    background-color: var(--neutralgray-700);
-    z-index: 2;
-}
-
-.benefits__heading{
-    color: var(--neutralgray-50);
-}
 
 .benefits__item{
     display: flex;
@@ -364,8 +343,6 @@ SERVICES SECTION
 
 .services{
     width: 100%;
-    background-color: var(--neutralgray-200);
-    display: block;
 }
 
 
@@ -424,6 +401,7 @@ SERVICES SECTION
 
 .card__description {
     font-weight: var(--fw-normal);
+    color: var(--neutralgray-500);
     margin: 3rem 1rem;
     text-align: center;
     position: relative;
@@ -438,7 +416,7 @@ SERVICES SECTION
     color: var(--mainyellow-1);
     font-size: var(--text-small);
     padding: 0.75rem 3rem;
-    border-radius: 30px;
+    border-radius: 8px;
     align-self: center;
     margin-bottom: 2.5rem;
     position: relative;
@@ -446,18 +424,84 @@ SERVICES SECTION
 
 }
 
+.services__image{
+    width: 100%;
+}
 
-/* REFERENCES */
+/*****
+REVIEWS
+****/
+
+.review__card{
+    background-color: var(--neutralgray-200);
+    width: 80%;
+    max-width: 30rem;
+    margin: 1rem auto 3rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+.review--row{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+
+
+}
+
+.review--column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.review__name{
+    font-weight: bolder;
+    padding-left: 0.5rem;
+    color: var(--neutralgray-900);
+}
+
+ 
+
+.review__rating{
+    height: 1rem;
+    width: auto;
+    padding-left: 0.5rem;
+}
+
+.review__description{
+    padding: 1rem 1rem;
+    color: var(--neutralgray-600);
+}
+
+
+
+/*****
+ REFERENCES
+******/
+
+
+.logos{
+    padding-bottom: 2rem;
+}
 
 .company__logo {
-    width: 10rem;
-    margin: 2rem auto;
+    width: 7rem;
+    height: auto;
+    height: auto;
+    margin: 2rem 2rem ;
     align-self: center;
 }
 
 
 
-/* FOOTER */
+/*****
+FOOTER
+*****/
 
 .footer{
     background-color: var(--neutralgray-900);
@@ -465,7 +509,8 @@ SERVICES SECTION
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0 1rem;
 }
 
 .phone-number{
@@ -480,12 +525,14 @@ SERVICES SECTION
 
 
 @media (min-width: 40em){
-    .split--cards{
+        .split{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:space-around;
-    }
 
+    
+    }
+  
 }
 
 /* @media screen and (min-width:768px){
