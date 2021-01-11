@@ -30,7 +30,7 @@ CUSTOM PROPERTIES
     --text-xl: 1.25rem;
     --text-2xl: 1.5rem;
     --text-3xl: 2rem;
-    --text-4xl:3rem;
+    --text-4xl:3.5rem;
 }
 
 /*****
@@ -64,6 +64,7 @@ GLOBAL STYLES
 body{
     font-size: 16px;
     font-family: 'Roboto Slab', sans-serif;
+    background-color:var(--neutralgray-50);
 }
 
 
@@ -88,6 +89,11 @@ img{
     display: block;
 
 }
+
+/* section{
+   width: 90%;
+   margin:auto;
+} */
 
 
 /*****
@@ -125,14 +131,21 @@ REUSABLE STYLES
 }
 
 /*****
-HEADER STYLES
+HERO SECTION
 *****/
 
-
-.header{
-    overflow: hidden;
-    background-color: var(--neutralgray-200);
+.hero{
+    position: relative;
+    color: var(--neutralgray-700);
+    background-image: url(../images/hero-blurred.webp);
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
+
 
 .nav{
     display: flex;
@@ -140,7 +153,7 @@ HEADER STYLES
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 0.5rem 1rem;
+    width: 90%;
 }
 
 .logo{
@@ -218,34 +231,15 @@ HEADER STYLES
     margin-top: 5rem;
 }
 
-
-/*****
-HERO SECTION
-*****/
-
-.hero{
-    color: var(--neutralgray-700);
-    background-image: url(../images/hero-blurred.webp);
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-}
-
-
 .hero__headline{
-    text-align: center;
     line-height: 0.85;
-    margin: auto;
     padding: 2rem 0 0.5rem 0;
-    max-width: 20rem;
-
-
+    text-align: center;
+    
 }
 
 .hero__subheadline{
-    font-size: 1.25em;
+    font-size: var(--text-xl);
     font-weight: var(--fw-normal);
     margin: auto;
     text-align: center;
@@ -253,12 +247,14 @@ HERO SECTION
  
 
 .hero__image{
+    position: relative;
+    bottom:0;
     max-width: 550px;
     width: 100%;
-    height:auto;
     margin: auto;
     /* filter:saturate(0%); */
 }
+
 
 /*****
 ABOUT US SECTION
@@ -268,18 +264,20 @@ ABOUT US SECTION
 .about-us__icons{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     margin:auto;
-    max-width: 20rem;
+    width: 90%;
+    max-width: 30rem;
 }
 
 
 .about-us__description{
     color: var(--neutralgray-700);
-    margin: auto;
     text-align: center;
     max-width: 30rem;
     padding:2rem 0 0;
+    width: 90%;
+    margin:auto
 
 }
 
@@ -297,13 +295,12 @@ ABOUT US SECTION
 BENEFITS
 *****/
 
-
-
 .benefits__item{
+    margin: 0 5%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
-    padding:0 1rem;
+    padding: 1.5rem 0;
+   
 }
 
 .benefits__icon{
@@ -316,12 +313,12 @@ BENEFITS
     color: var(--neutralgray-100);
     font-size: var(--text-large);
     font-weight: var(--fw-bold);
-    margin: 1.5rem 0 1rem 0;
+    margin: 1rem 0;
 }
 
 .benefits__description{
     color: var(--neutralgray-200);
-    max-width: 25rem;
+    max-width: 22rem;
 }
 
 .benefits__image{
@@ -337,80 +334,66 @@ SERVICES SECTION
     width: 100%;
 }
 
-
 .card{
-    width: 90%;
-    max-width: 23rem;
+    width: 100%;
+    max-width: 24rem;
     align-self: center;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 8px;
-    margin:1rem 0 2rem 0;
+    margin:1rem 0 0 0;
     color: var(--neutralgray-700);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     position: relative;
-   
-}
-
-.card__image{
-    max-height: 10rem;
-    display: block;
-    object-fit: cover;
-    filter: saturate(50%);
+    background-color:var(--neutralgray-900)
 }
 
 .card__body{
-    position: relative;
-    z-index: 2;
+    position: absolute;    
 }
 
 .card__bg{
+    opacity: 0.5;
     width: 100%;
-    position: absolute;
-    top: -3.5rem;
-    object-fit: cover;
-    
+    height: 100%;
+    object-fit:cover;
+    filter: saturate(50%), contrast(30%);
 }
 
-.card__text-container{
-    display: flex;
-    flex-direction: column;
-
+.card__icon{
+    margin: 1rem 1rem 0;
 }
-
-
+   
 .card__title{
-    margin-top: 1rem;
+    margin: 0 1rem;
+    color: var(--neutralgray-100);
     font-size: var(--text-2xl);
     font-weight: var(--fw-medium);
-    text-align: center;
+    text-align: left;
     position: relative;
-    z-index: 2;
 }
 
 .card__description{
     font-weight: var(--fw-normal);
-    color: var(--neutralgray-500);
+    color: white;
     margin: 3rem 1rem;
     text-align: center;
     position: relative;
-    z-index: 2;
 }
 
 
 .card__button{
     border: none;
     outline: none;
-    background-color: var(--neutralgray-700);
-    color: var(--neutralgray-100);
+    background-color: var(--neutralgray-200);
+    color: var(--neutralgray-700);
     font-size: var(--text-small);
-    padding: 0.75rem 3rem;
+    font-weight: var(--fw-bold);
+    padding: 1rem 2rem;
+    margin: 0 1rem;
     border-radius: 8px;
-    align-self: center;
-    margin-bottom: 2.5rem;
-    position: relative;
-    z-index: 2;
+    border: 3px solid var(--neutralgray-200);
 
 }
 
@@ -519,14 +502,22 @@ FOOTER
 *****/
 
 
-@media (min-width: 48em){
-        .split{
+@media (min-width: 48rem){
+
+    .split{
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:space-evenly;
-
-    
     }
+
+    .split--hero{
+        width: 90%;
+        padding:0;
+        margin: auto;
+    }
+
+
   
 }
 

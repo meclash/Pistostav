@@ -1,3 +1,6 @@
+
+// MOBILE NAVIGATION
+
 let nav = document.querySelector(".nav");
 let hamburgerMenu = document.querySelector(".hamburger-menu")
 
