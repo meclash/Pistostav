@@ -153,6 +153,7 @@ HERO SECTION
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    padding-top: 1rem;
     width: 90%;
 }
 
@@ -390,9 +391,9 @@ SERVICES SECTION
     color: var(--neutralgray-700);
     font-size: var(--text-small);
     font-weight: var(--fw-bold);
-    padding: 1rem 2rem;
-    margin: 0 1rem;
-    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin: 0 2rem;
+    border-radius: 30px;
     border: 3px solid var(--neutralgray-200);
 
 }
@@ -405,15 +406,85 @@ SERVICES SECTION
 REVIEWS
 ****/
 
-.reviews__wrapper{
-    overflow: hidden;
+.reviews{
+    width: 100%;
 }
 
-.review__card{
-    background-color: var(--neutralgray-200);
+/* REVIEWS CAROUSEL */
+
+.carousel{
     width: 80%;
     max-width: 30rem;
-    margin: 1rem auto 3rem;
+    margin: auto;
+    height: auto;
+    position: relative;
+}
+
+.carousel__track-container{
+    height: 25rem;
+    width: 100%;
+    background-color: greenyellow;
+}
+
+
+.carousel__track{
+
+}
+
+
+.carousel__slide{
+    position: absolute;
+    top: 0%;
+    bottom: ;
+
+}
+
+
+.carousel__button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background: transparent;
+    color: var(--neutralgray-200);
+}
+
+.carousel__button--left{
+    left: -3rem;
+}
+
+.carousel__button--right{
+    right:-3rem;
+}
+
+.carousel__nav{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 3rem;
+}
+
+.carousel__indicator{
+    border:0;
+    border-radius: 50%;
+    height: 0.75rem;
+    width: 0.75rem;
+    background: var(--neutralgray-500);
+    margin: 0 0.125rem;
+}
+
+.carousel__indicator.current-slide{
+    background: var(--neutralgray-200);
+}
+
+
+/* REVIEWS CARD */
+
+.review__card{
+    overflow: hidden;
+    background-color: var(--neutralgray-200);
+    width: 100%;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -455,8 +526,9 @@ REVIEWS
 }
 
 .review__description{
-    max-width: 27rem;
-    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 2rem;
     color: var(--neutralgray-600);    
 }
 
