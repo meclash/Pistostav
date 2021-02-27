@@ -29,7 +29,7 @@ CUSTOM PROPERTIES
     --text-large: 1.125rem;
     --text-xl: 1.25rem;
     --text-2xl: 1.5rem;
-    --text-3xl: 2rem;
+    --text-3xl: 2.25rem;
     --text-4xl:3.5rem;
 }
 
@@ -70,11 +70,13 @@ body{
 
 
 h1{
+    font-family: 'Kanit', sans-serif;
     font-size: var(--text-4xl);
     font-weight: var(--fw-black);
 }
 
 h2{
+    font-family: 'Kanit', sans-serif;
     font-size: var(--text-3xl);
     font-weight: var(--fw-bold);
     text-align: center;
@@ -101,7 +103,7 @@ REUSABLE STYLES
 *****/
 
 .site-wrapper{
-    max-width: 75rem;
+    max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
     
@@ -111,7 +113,7 @@ REUSABLE STYLES
     text-decoration: underline;
     text-decoration-color: var(--mainyellow-1);
     text-decoration-thickness: 0.5rem;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.75rem;
 }
 
 .split{
@@ -232,6 +234,15 @@ HERO SECTION
     margin-top: 5rem;
 }
 
+.headline__wrapper {
+    max-width: 550px;
+    background-image: url('/images/brush-stroke.webp');  
+    background-size: ; 
+   
+}
+
+
+
 .hero__headline{
     line-height: 0.85;
     padding: 2rem 0 0.5rem 0;
@@ -265,7 +276,7 @@ ABOUT US SECTION
 .about-us__icons{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-between;
     margin:auto;
     width: 90%;
     max-width: 30rem;
@@ -301,6 +312,8 @@ BENEFITS
     display: flex;
     flex-direction: column;
     padding: 1.5rem 0;
+    max-width: 30rem;
+
    
 }
 
@@ -312,14 +325,14 @@ BENEFITS
 
 .benefits__title{
     color: var(--neutralgray-100);
-    font-size: var(--text-large);
+    font-family: 'Kanit', sans-serif;
+    font-size: var(--text-xl);
     font-weight: var(--fw-bold);
     margin: 1rem 0;
 }
 
 .benefits__description{
     color: var(--neutralgray-200);
-    max-width: 22rem;
 }
 
 .benefits__image{
@@ -332,34 +345,31 @@ SERVICES SECTION
 *****/
 
 .services{
-    width: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23374151' fill-opacity='0.04' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
+    
 }
 
 .card{
-    width: 100%;
-    max-width: 24rem;
+    width: 90%;
+    max-width: 30rem;
     align-self: center;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     border-radius: 8px;
-    margin:1rem 0 0 0;
+    margin:1rem ;
     color: var(--neutralgray-700);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     position: relative;
-    background-color:var(--neutralgray-900)
+    background-color:var(--neutralgray-900);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light
 }
 
-.card__body{
-    position: absolute;    
-}
+.card:hover{
+    background-blend-mode:normal;
 
-.card__bg{
-    opacity: 0.5;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    filter: saturate(50%), contrast(30%);
 }
 
 .card__icon{
@@ -369,6 +379,7 @@ SERVICES SECTION
 .card__title{
     margin: 0 1rem;
     color: var(--neutralgray-100);
+    font-family: 'Kanit', sans-serif;
     font-size: var(--text-2xl);
     font-weight: var(--fw-medium);
     text-align: left;
@@ -377,14 +388,14 @@ SERVICES SECTION
 
 .card__description{
     font-weight: var(--fw-normal);
-    color: white;
+    color: var(--neutralgray-100);
     margin: 3rem 1rem;
     text-align: center;
     position: relative;
 }
 
-
 .card__button{
+    width: 9rem;
     border: none;
     outline: none;
     background-color: var(--neutralgray-200);
@@ -392,14 +403,43 @@ SERVICES SECTION
     font-size: var(--text-small);
     font-weight: var(--fw-bold);
     padding: 0.5rem 1rem;
-    margin: 0 2rem;
+    margin: 0rem 1rem 2rem;
     border-radius: 30px;
     border: 3px solid var(--neutralgray-200);
 
 }
 
+.card__button:hover{
+    cursor: pointer;
+}
+
+/* 5 services cards */
+
+.card--udrzba{
+    background-image: url('/images/udrzba-zelene.webp');
+}
+
+.card--vyskove{
+    background-image: url('/images/vyskove-prace.webp');
+}
+
+.card--odpad{
+    background-image:url('/images/odvoz-odpadu.webp')
+}
+
+.card--vykopove{
+    background-image: url('/images/vykopove-prace.webp');
+}
+
+.card--preprava{
+    background-image: url('/images/preprava.webp');
+}
+
+/*  */
+
 .services__image{
     width: 100%;
+    margin-top: 2rem;
 }
 
 /*****
@@ -410,79 +450,85 @@ REVIEWS
     width: 100%;
 }
 
-/* REVIEWS CAROUSEL */
 
 .carousel{
-    width: 80%;
-    max-width: 30rem;
-    margin: auto;
-    height: auto;
     position: relative;
-}
-
-.carousel__track-container{
-    height: 25rem;
-    width: 100%;
-    background-color: greenyellow;
-}
-
-
-.carousel__track{
-
+    width: 80%;
+    max-width: 35rem;
+    margin: auto;
 }
 
 
 .carousel__slide{
-    position: absolute;
-    top: 0%;
-    bottom: ;
+    display: none;
 
 }
 
-
-.carousel__button{
+/* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
     position: absolute;
-    height: 50px;
-    width: 50px;
     top: 50%;
-    transform: translateY(-50%);
-    border: 0;
-    background: transparent;
-    color: var(--neutralgray-200);
-}
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: -2.25rem;
+    border-radius: 3px 0 0 3px;
+  }
 
-.carousel__button--left{
-    left: -3rem;
-}
+  .prev {
+    position: absolute;
+    left: -2.25rem;
+    border-radius: 3px 0 0 3px;
 
-.carousel__button--right{
-    right:-3rem;
-}
-
-.carousel__nav{
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0 3rem;
-}
-
-.carousel__indicator{
-    border:0;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot__container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--neutralgray-100);
     border-radius: 50%;
-    height: 0.75rem;
-    width: 0.75rem;
-    background: var(--neutralgray-500);
-    margin: 0 0.125rem;
-}
-
-.carousel__indicator.current-slide{
-    background: var(--neutralgray-200);
-}
+    display: inline-block;
+    transition: background-color 0.4s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: var(--neutralgray-500);
+  }
+  
 
 
 /* REVIEWS CARD */
 
 .review__card{
-    overflow: hidden;
+    height: auto;
+    width: auto;
     background-color: var(--neutralgray-200);
     width: 100%;
     border-radius: 8px;
@@ -559,7 +605,7 @@ FOOTER
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 1rem;
 }
 
@@ -574,19 +620,27 @@ FOOTER
 *****/
 
 
-@media (min-width: 48rem){
+@media (min-width: 55rem){
 
     .split{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         justify-content:space-evenly;
+
     }
 
     .split--hero{
         width: 90%;
-        padding:0;
         margin: auto;
+        justify-content:space-between;
+
+    }
+
+    .split--benefits{
+        column-count: 2;
+        justify-content:space-between;
+
     }
 
 
