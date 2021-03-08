@@ -62,8 +62,8 @@ GLOBAL STYLES
 
 
 body{
-    font-size: 16px;
-    font-family: 'Roboto Slab', sans-serif;
+    font-size: var(--text-large);
+    font-family: 'Kanit', sans-serif;
     background-color:var(--neutralgray-50);
 }
 
@@ -234,19 +234,30 @@ HERO SECTION
     margin-top: 5rem;
 }
 
-.headline__wrapper {
-    max-width: 550px;
-    background-image: url('/images/brush-stroke.webp');  
-    background-size: ; 
-   
-}
 
+
+/* .hero__brushstroke{
+    width:90%;
+    margin: auto;
+    max-width: 300px; */
+}
+/*  
+.headline__container{
+    width: 90%;
+    margin: auto;
+    max-width: 300px;
+    background-image: url('/images/brush-stroke2.webp');
+  
+} */
 
 
 .hero__headline{
     line-height: 0.85;
     padding: 2rem 0 0.5rem 0;
+    margin: auto;
     text-align: center;
+
+
     
 }
 
@@ -256,7 +267,7 @@ HERO SECTION
     margin: auto;
     text-align: center;
 }
- 
+
 
 .hero__image{
     position: relative;
@@ -264,7 +275,6 @@ HERO SECTION
     max-width: 550px;
     width: 100%;
     margin: auto;
-    /* filter:saturate(0%); */
 }
 
 
@@ -364,7 +374,8 @@ SERVICES SECTION
     background-color:var(--neutralgray-900);
     background-size: cover;
     background-repeat: no-repeat;
-    background-blend-mode:soft-light
+    background-blend-mode:soft-light;
+    pointer-events: none;
 }
 
 .card:hover{
@@ -406,6 +417,7 @@ SERVICES SECTION
     margin: 0rem 1rem 2rem;
     border-radius: 30px;
     border: 3px solid var(--neutralgray-200);
+    pointer-events: auto;
 
 }
 
@@ -454,7 +466,7 @@ REVIEWS
 .carousel{
     position: relative;
     width: 80%;
-    max-width: 35rem;
+    max-width: 30rem;
     margin: auto;
 }
 
@@ -527,7 +539,6 @@ REVIEWS
 /* REVIEWS CARD */
 
 .review__card{
-    height: auto;
     width: auto;
     background-color: var(--neutralgray-200);
     width: 100%;
@@ -572,8 +583,12 @@ REVIEWS
 }
 
 .review__description{
+    font-family: "Roboto Slab";
+    font-size: var(--text-base);
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items:center ;
+    min-height: 15rem;
     padding: 1rem 1rem 2rem;
     color: var(--neutralgray-600);    
 }
