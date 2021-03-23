@@ -102,12 +102,12 @@ img{
 REUSABLE STYLES
 *****/
 
-.site-wrapper{
+/* .site-wrapper{
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
     
-}
+} */
 
 .underline-title {
     text-decoration: underline;
@@ -189,7 +189,7 @@ HERO SECTION
     display: none;
 }
 
-.nav-list{
+.nav__list{
     position: fixed; 
     display: flex;
     top: 0;
@@ -207,12 +207,12 @@ HERO SECTION
 }
 
 
-.menu-open .nav-list{  
+.menu-open .nav__list{  
     opacity: 1;
     transform: scale(1) 
 }
 
-.nav-link{
+.nav__link{
     display: block;
     color: var(--neutralgray-200);
     font-weight: bold;
@@ -222,7 +222,7 @@ HERO SECTION
     padding: 1rem;
 }
 
-.nav-link:hover{
+.nav__link:hover{
     opacity: 40%;
 }
 
@@ -236,43 +236,20 @@ HERO SECTION
 
 
 
-/* .hero__brushstroke{
-    width:90%;
-    margin: auto;
-    max-width: 300px; */
-}
-/*  
-.headline__container{
+.hero__text{
     width: 90%;
-    margin: auto;
-    max-width: 300px;
-    background-image: url('/images/brush-stroke2.webp');
-  
-} */
-
-
-.hero__headline{
-    line-height: 0.85;
-    padding: 2rem 0 0.5rem 0;
-    margin: auto;
-    text-align: center;
-
+    margin: 2rem auto;
+    max-width: 35rem;
+    height: auto;
 
     
-}
-
-.hero__subheadline{
-    font-size: var(--text-xl);
-    font-weight: var(--fw-normal);
-    margin: auto;
-    text-align: center;
 }
 
 
 .hero__image{
     position: relative;
     bottom:0;
-    max-width: 550px;
+    max-width: 30rem;
     width: 100%;
     margin: auto;
 }
@@ -282,30 +259,35 @@ HERO SECTION
 ABOUT US SECTION
 *****/
 
+.about__us{
+    overflow: hidden;
+}
+
+.about-us__text{
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+    max-width: 30rem;
+}
 
 .about-us__icons{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    margin:auto;
-    width: 90%;
-    max-width: 30rem;
 }
 
 
 .about-us__description{
     color: var(--neutralgray-700);
     text-align: center;
-    max-width: 30rem;
-    padding:2rem 0 0;
-    width: 90%;
-    margin:auto
-
+    padding:2rem 0 ;
+   
 }
 
 .about-us__image{
     display: block;
     position: relative;
+    bottom: 0;
     width: 100%;
     max-width: 40rem;
     margin: auto;
@@ -317,8 +299,10 @@ ABOUT US SECTION
 BENEFITS
 *****/
 
+
 .benefits__item{
-    margin: 0 5%;
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     padding: 1.5rem 0;
@@ -334,20 +318,19 @@ BENEFITS
 }
 
 .benefits__title{
-    color: var(--neutralgray-100);
+    color: var(--neutralgray-200);
     font-family: 'Kanit', sans-serif;
-    font-size: var(--text-xl);
-    font-weight: var(--fw-bold);
     margin: 1rem 0;
 }
 
 .benefits__description{
-    color: var(--neutralgray-200);
+    color: var(--neutralgray-400);
 }
 
 .benefits__image{
-    margin-top:2rem;
+    margin:2rem auto 0;
     width: 100%;
+    max-width: 1200px;
 }
 
 /*****
@@ -355,13 +338,12 @@ SERVICES SECTION
 *****/
 
 .services{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23374151' fill-opacity='0.04' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");
-    
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23374151' fill-opacity='0.08'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .card{
     width: 90%;
-    max-width: 30rem;
+    max-width: 25rem;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -376,10 +358,17 @@ SERVICES SECTION
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
     pointer-events: none;
+
+
+
+
+
 }
 
 .card:hover{
     background-blend-mode:normal;
+
+
 
 }
 
@@ -389,7 +378,7 @@ SERVICES SECTION
    
 .card__title{
     margin: 0 1rem;
-    color: var(--neutralgray-100);
+    color: var(--neutralgray-200);
     font-family: 'Kanit', sans-serif;
     font-size: var(--text-2xl);
     font-weight: var(--fw-medium);
@@ -399,7 +388,7 @@ SERVICES SECTION
 
 .card__description{
     font-weight: var(--fw-normal);
-    color: var(--neutralgray-100);
+    color: var(--neutralgray-400);
     margin: 3rem 1rem;
     text-align: center;
     position: relative;
@@ -415,9 +404,13 @@ SERVICES SECTION
     font-weight: var(--fw-bold);
     padding: 0.5rem 1rem;
     margin: 0rem 1rem 2rem;
-    border-radius: 30px;
+    border-radius: 8px;
     border: 3px solid var(--neutralgray-200);
     pointer-events: auto;
+
+
+
+    
 
 }
 
@@ -451,7 +444,8 @@ SERVICES SECTION
 
 .services__image{
     width: 100%;
-    margin-top: 2rem;
+    margin: 2rem auto 0;
+    max-width: 1400px;
 }
 
 /*****
@@ -597,17 +591,24 @@ REVIEWS
 /*****
  REFERENCES
 ******/
-
 .logos{
-    padding-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .company__logo {
     width: 7rem;
     height: auto;
     height: auto;
-    margin: 2rem 2rem ;
+    margin: 2rem 3rem ;
     align-self: center;
+}
+
+.references__image{
+    width: 100%;
+    max-width: 10rem;
+    margin: auto;
+    position: relative;
+    bottom: -3rem;
 }
 
 /*****
@@ -616,32 +617,122 @@ FOOTER
 
 .footer{
     background-color: var(--neutralgray-900);
-    height: 10rem;
+   
+}
+
+.footer__split{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    padding: 5rem 5% 1rem;
+}
+
+/* LINE 1 */
+
+
+.socials__line1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.social__icons{
+    display: flex;
+    flex-direction: row;
     padding: 0 1rem;
 }
 
-.phone-number{
-    color: var(--mainyellow-1);
-    font-size: xx-large;
+.social__icon{
+    margin: 0 0.5rem 0 0;
 }
 
+.social__number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.footer__text{
+    color: var(--mainyellow-1);
+}
+
+.socials__line2{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0 ;
+}
+
+.socials__line3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+
+.social__mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__address{
+    color: var(--neutralgray-200);
+        
+}
 
 /*****
 4. MEDIA QUERIES
 *****/
 
 
-@media (min-width: 55rem){
+@media (min-width: 56rem){
+
+    .nav{
+        margin-bottom: 2rem;
+    }
+
+    .nav__list{
+        all:unset;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .nav__link{
+        all:unset;
+        color: var(--neutralgray-700);
+        font-family: 'Kanit', sans-serif;
+        font-size: var(--text-base);
+        margin: 0 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+
+        
+
+        
+    }
+
+    .kontakt-btn{
+        margin-left: 7rem;
+        border: 3px solid var(--neutralgray-700);
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 0.25rem 1rem;
+    }
+
+    .hamburger-menu{
+        visibility: hidden;
+    }
 
     .split{
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
-        justify-content:space-evenly;
 
     }
 
@@ -652,10 +743,46 @@ FOOTER
 
     }
 
-    .split--benefits{
-        column-count: 2;
-        justify-content:space-between;
+    .split--about-us{
+        justify-content: space-between;
+        margin-left: 5%;
+    }
 
+    .split--services{
+        column-count: 2;
+        justify-content:space-around;
+
+    }
+
+    .split--logos{
+        justify-content: space-around;
+        
+    }
+
+    .hero__text{
+        margin: 5rem 0;
+    }
+
+    .split__item{
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .benefits__item{
+        margin: 0;
+
+    
+    }
+
+    .split--benefits{
+        width: 90%;
+        margin: auto;
+        justify-content: space-around;
+    }
+
+    .about-us__image{
+        width: auto;
+        overflow: hidden;
     }
 
 
