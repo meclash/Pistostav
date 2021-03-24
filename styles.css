@@ -183,10 +183,14 @@ HERO SECTION
 
 .menu-open .hamburger-menu .fa-times{
     display: block;
+    position: fixed;
+    top: 1.5rem;
+    right:5%;
 }
 
 .menu-open .hamburger-menu .fa-bars{
     display: none;
+
 }
 
 .nav__list{
@@ -194,7 +198,7 @@ HERO SECTION
     display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--neutralgray-700);
     flex-direction: column;
@@ -711,7 +715,50 @@ SLUZBY
     height: 20rem;
 }
 
+/* GRID */
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 2px;
+    width: 100%;
+  }
+
+  
+
+  .grid img {
+    object-fit:cover;
+    width: 100%;
+    height:100%;
+  }
+  
+  #lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+  }
+  
+  #lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+  }
+  
+    
 
 
 /*****
@@ -817,7 +864,7 @@ SLUZBY
         overflow: hidden;
     }
 
-
+ */
   
 }
 
