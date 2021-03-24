@@ -624,7 +624,7 @@ FOOTER
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5rem 5% 1rem;
+    padding: 5rem 5% 2rem;
 }
 
 /* LINE 1 */
@@ -681,6 +681,38 @@ FOOTER
     color: var(--neutralgray-200);
         
 }
+
+
+/*****
+SLUZBY
+*****/
+
+.urdzba-zelene{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sluzby__text{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--neutralgray-100);
+    max-width: 27rem;
+    color: var(--neutralgray-700);
+    margin-bottom: 3rem;
+}
+
+
+
+.sluzby__image-container{
+    width: 20rem;
+    height: 20rem;
+}
+
+
+
 
 /*****
 4. MEDIA QUERIES
