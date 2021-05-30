@@ -238,7 +238,6 @@ HERO SECTION
     margin-top: 5rem;
 }
 
-/* DROPDOWN */
 
 
 
@@ -301,51 +300,34 @@ ABOUT US SECTION
 
 }
 
-/*  */
+/*NAV DROPDOWN MENU */
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: flex;
+    cursor: pointer;
+
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--neutralgray-200);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 8px;
-    right: -1.5rem;
+    z-index: 999;
+    font-weight: var(--fw-medium);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: var(--neutralgray-700);
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-    font-size: var(--text-base);
-    font-weight: var(--fw-medium);
+    color: var(--neutralgray-300);
+    /* display: none; */
+    cursor: pointer;
+    padding: 1rem;
   }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color:var(--neutralgray-300);
-    border-radius: 8px;
-    
-    }
-
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-      display: block;
-      z-index: 999;
-    }
-  
   
 
 /*****
-BENEFITS
+BENEFITS SECTION
 *****/
 
 
@@ -407,14 +389,7 @@ SERVICES SECTION
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
     pointer-events: none;
-
-
 }
-
-/* .card:hover{
-    background-blend-mode:normal;
-
-} */
 
 .card__icon{
     margin: 1rem 1rem 0;
@@ -450,11 +425,7 @@ SERVICES SECTION
     margin: 0rem 1rem 2rem;
     border-radius: 8px;
     border: 3px solid var(--neutralgray-200);
-    pointer-events: auto;
-
-
-
-    
+    pointer-events: auto;   
 
 }
 
@@ -493,7 +464,7 @@ SERVICES SECTION
 }
 
 /*****
-REVIEWS
+REVIEWS SECRION
 ****/
 
 .reviews{
@@ -574,7 +545,7 @@ REVIEWS
   
 
 
-/* REVIEWS CARD */
+/* Review card */
 
 .review__card{
     width: auto;
@@ -633,7 +604,7 @@ REVIEWS
 
 
 /*****
- REFERENCES
+ REFERENCES SECTION
 ******/
 .logos{
     margin-top: 3rem;
@@ -656,7 +627,7 @@ REVIEWS
 }
 
 /*****
-FOOTER
+FOOTER SECTION
 *****/
 
 .footer{
@@ -671,7 +642,7 @@ FOOTER
     padding: 5rem 5% 2rem;
 }
 
-/* LINE 1 */
+/* Line 1*/
 
 
 .socials__line1{
@@ -727,7 +698,7 @@ FOOTER
 }
 
 
-/* GRID */
+/* GALLERY */
 
 .gallery {
     width: 90%;
@@ -777,13 +748,14 @@ FOOTER
     width: 90%;
     margin: auto;
     border-radius: 8px;
-    max-width: 20rem;
     color: var(--neutralgray-700);
     margin-bottom: 2rem;
 
-
 }
 
+
+.sluzby__text{
+}
 
 
 .sluzby__text > ul {
@@ -794,8 +766,21 @@ FOOTER
     padding: 0.3rem 0 1rem 3rem; 
     background-image: url(/images/_check-circle.png);
     background-repeat: no-repeat;
+    max-width: 20rem;
 } 
    
+
+
+
+
+
+
+
+
+
+
+
+
       
 /*****
 4. MEDIA QUERIES
@@ -822,7 +807,7 @@ FOOTER
         color: var(--neutralgray-700);
         font-family: 'Kanit', sans-serif;
         font-size: var(--text-base);
-        margin: 0 2rem;
+        padding: 0 2rem 1rem;
         text-transform: uppercase;
         font-weight: bold;
         cursor: pointer;
@@ -908,30 +893,52 @@ FOOTER
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+
+    .sluzby__text {
+        column-count: 3;
+        column-gap: 2rem;
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--neutralgray-200);
+    min-width: 15rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+    border-radius: 8px;
+    letter-spacing: normal;
+    right: -4rem;
+    top: 2rem;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: var(--neutralgray-700);
+    padding: 12px 12px;
+    display: block;
+    font-size: var(--text-base);
+    font-weight: var(--fw-medium);
+    text-transform: none;
+
+}
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color:var(--neutralgray-300);
+    
+    }
+
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+      z-index: 999;
+    }
+
+    
         
 
 
   
 }
-
-/* @media screen and (min-width:768px){
-        
-    
-    
-    .kontakt-btn {
-        border: 2px solid var(--neutralgray-200);
-        box-sizing: border-box;
-        border-radius: 28px;
-        padding: 10px 20px;
-    }
-
-    .kontakt-btn:hover {
-        background: #F3FF4A;
-    }
-
-    .hamburger-menu {
-        display: none;
-    }
-
-    
-} */

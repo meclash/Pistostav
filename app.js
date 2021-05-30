@@ -3,11 +3,16 @@
 
 let nav = document.querySelector(".nav");
 let hamburgerMenu = document.querySelector(".hamburger-menu")
+let kontaktBtn = document.querySelector(".kontakt-btn")
 
 hamburgerMenu.addEventListener("click", function () {
     nav.classList.toggle("menu-open");
 })
 
+
+kontaktBtn.addEventListener("click", function () {
+    nav.classList.remove("menu-open");
+})
 
 
 //MOVING REVIEWS
@@ -39,25 +44,3 @@ function showSlides(n) {
 }
 
 
-//
-const lightbox = document.createElement('div')
-lightbox.id = 'lightbox'
-document.body.appendChild(lightbox)
-
-const images = document.querySelectorAll('.grid-image')
-images.forEach(image => {
-  image.addEventListener('click', e => {
-    lightbox.classList.add('active')
-    const img = document.createElement('grid-image')
-    img.src = image.src
-    while (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild)
-    }
-    lightbox.appendChild(img)
-  })
-})
-
-lightbox.addEventListener('click', e => {
-  if (e.target !== e.currentTarget) return
-  lightbox.classList.remove('active')
-})
