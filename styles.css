@@ -83,6 +83,10 @@ h2{
     padding: 2rem 0 2rem 0;
 }
 
+h3{
+    font-size: var(--text-base);
+}
+
 p{
     font-weight: var(--fw-normal);
 }
@@ -270,9 +274,8 @@ ABOUT US SECTION
 }
 
 .about-us__text{
-    margin: auto;
-    margin-bottom: 2rem;
     width: 90%;
+    margin: auto;
     max-width: 30rem;
 }
 
@@ -330,14 +333,18 @@ ABOUT US SECTION
 BENEFITS SECTION
 *****/
 
+.benefits{
+    position: relative;
+}
+
 
 .benefits__item{
-    width: 90%;
+    max-width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
     padding: 1.5rem 0;
-    max-width: 30rem;
+    max-width: 20rem;
 
    
 }
@@ -356,12 +363,12 @@ BENEFITS SECTION
 
 .benefits__description{
     color: var(--neutralgray-400);
+    font-size: var(--text-base);
 }
 
 .benefits__image{
-    margin:2rem auto 0;
+    margin: 2rem auto 0;
     width: 100%;
-    max-width: 1200px;
 }
 
 /*****
@@ -546,6 +553,7 @@ REVIEWS SECRION
 
 
 /* Review card */
+
 
 .review__card{
     width: auto;
@@ -844,8 +852,7 @@ FOOTER SECTION
     }
 
     .split--about-us{
-        justify-content: space-between;
-        margin-left: 5%;
+        justify-content: space-around;
     }
 
 
@@ -863,16 +870,39 @@ FOOTER SECTION
         overflow: hidden;
     }
 
+
+    .benefits__image-container{
+        position: relative;
+    }
+    
     .benefits__item{
-        margin: 0;
 
     }
+    
+
+
+
+    .benefits__image{
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        margin: auto;
+        width: 100%;
+        opacity: 10%;
+      
+    }
+
 
     .split--benefits{
-        max-width: 90%;
-        margin: auto;
-        justify-content: space-around;
+        padding-bottom: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-count: 2;
+
+
     }
+    
+
 
     .split--sluzby{
         display: flex;
@@ -882,13 +912,22 @@ FOOTER SECTION
         justify-content: space-between;
 
     }
+/* 
+    .split--why-us{
+        display: flex;
+        flex: row;
+    } */
 
 
 
     .about-us__image{
         width: auto;
         overflow: hidden;
+        margin: 0;
+        
     }
+
+    
 
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
