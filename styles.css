@@ -89,6 +89,7 @@ h3{
 
 p{
     font-weight: var(--fw-normal);
+    font-size: var(--text-base);
 }
 
 img{
@@ -375,9 +376,7 @@ BENEFITS SECTION
 SERVICES SECTION 
 *****/
 
-.services{
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23374151' fill-opacity='0.08'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
+
 
 .card{
     width: 90%;
@@ -397,6 +396,7 @@ SERVICES SECTION
     background-blend-mode:soft-light;
     pointer-events: none;
 }
+
 
 .card__icon{
     margin: 1rem 1rem 0;
@@ -553,7 +553,6 @@ REVIEWS SECRION
 
 
 /* Review card */
-
 
 .review__card{
     width: auto;
@@ -852,7 +851,8 @@ FOOTER SECTION
     }
 
     .split--about-us{
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 5vw;
     }
 
 
@@ -870,38 +870,46 @@ FOOTER SECTION
         overflow: hidden;
     }
 
-
-    .benefits__image-container{
-        position: relative;
-    }
-    
     .benefits__item{
-
+        margin-left: 5vw;
     }
-    
+
 
 
 
     .benefits__image{
         position: absolute;
         bottom: 0;
+        right: 0;
         overflow: hidden;
-        margin: auto;
-        width: 100%;
-        opacity: 10%;
-      
+        max-width: 1400px;
     }
 
-
     .split--benefits{
-        padding-bottom: 10%;
+        padding-bottom: 25%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-count: 2;
-
+        grid-template-columns: 0.3fr 0.3fr 0.4fr;
+        grid-template-areas:
+            " one three five"
+            " two four five"
 
     }
     
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
 
 
     .split--sluzby{
