@@ -3,15 +3,30 @@
 
 let nav = document.querySelector(".nav");
 let hamburgerMenu = document.querySelector(".hamburger-menu")
-let kontaktBtn = document.querySelector(".kontakt-btn")
+
+//opening and closing hamburger menu
 
 hamburgerMenu.addEventListener("click", function () {
     nav.classList.toggle("menu-open");
 })
 
+// contact button closes mobile menu
+
+let kontaktBtn = document.querySelector(".kontakt-btn")
+
 
 kontaktBtn.addEventListener("click", function () {
     nav.classList.remove("menu-open");
+})
+
+//opening mobile submenu
+
+let subMenuButton = document.querySelector(".sub-menu__button");
+let subMenu = document.querySelector(".sub-menu__toggle");
+
+
+subMenuButton.addEventListener("click", function () {
+  subMenu.classList.toggle("sub-menu__toggle");
 })
 
 
