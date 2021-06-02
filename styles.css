@@ -411,8 +411,8 @@ SERVICES SECTION
 
 .card{
     max-width: 90%;
-    width: 23rem;
-    height: auto;
+    max-width: 20rem;
+    height: 20rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -441,7 +441,6 @@ SERVICES SECTION
 }
    
 .card__title{
-    margin: 0 1rem; 
     color: var(--neutralgray-200);
     font-family: 'Kanit', sans-serif;
     font-size: var(--text-2xl);
@@ -459,15 +458,17 @@ SERVICES SECTION
 }
 
 .card__button{
+    position: relative;
+    bottom: 0;
     width: 90%;
-    margin: 0 auto 2rem;
+    /* margin: 0 auto 1.25rem; */
     border: none;
     outline: none;
     background-color: var(--neutralgray-200);
     color: var(--neutralgray-700);
     font-size: var(--text-large);
     font-weight: var(--fw-medium);
-    padding: 0.75rem;
+    padding: 0.5rem;
     border-radius: 8px;
     pointer-events: auto;
     text-align: center;
@@ -504,13 +505,8 @@ SERVICES SECTION
     background-image: url('/images/home/preprava.webp');
 }
 
-/*  */
 
-.services__image{
-    width: 100%;
-    margin: 2rem auto 0;
-    max-width: 1400px;
-}
+
 
 /*****
 REVIEWS SECRION
@@ -518,6 +514,9 @@ REVIEWS SECRION
 
 .reviews{
     width: 100%;
+    position: relative;
+
+    
 }
 
 .review__card{
@@ -527,6 +526,7 @@ REVIEWS SECRION
 
 
 .carousel{
+    z-index: 2;
     position: relative;
     width: 80%;
     max-width: 30rem;
@@ -537,6 +537,14 @@ REVIEWS SECRION
 .carousel__slide{
     display: none;
 
+}
+
+.reviews__photo{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    z-index: 0;
+    opacity: 10%;
 }
 
 /* Next & previous buttons */
@@ -572,6 +580,7 @@ REVIEWS SECRION
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color: white;
+    transition: 0.2s;
   }
   
   /* The dot/bullet/indicator container */
@@ -654,6 +663,12 @@ REVIEWS SECRION
     min-height: 15rem;
     padding: 1rem 1rem 2rem;
     color: var(--neutralgray-600);    
+}
+
+.reviews__image{
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
 }
 
 
