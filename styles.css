@@ -404,6 +404,10 @@ BENEFITS SECTION
 SERVICES SECTION 
 *****/
 
+.services{
+    position: relative;
+}
+
 .cards__wrapper{
     width: 80%;
     margin: auto;
@@ -668,10 +672,11 @@ REVIEWS SECRION
     color: var(--neutralgray-600);    
 }
 
-.reviews__image{
+.services__image{
     width: 100%;
     margin: auto;
     max-width: 1200px;
+   
 }
 
 
@@ -1002,11 +1007,18 @@ BLOG
     }
 
     .split--services{
+        
+    }
+
+    .cards__wrapper{
         display: grid;
         column-count: 3;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1rem;
-     }
+        max-width: 1200px;
+        z-index: 2;
+        position: relative;
+    }
 
     .split--about-us{
         justify-content: space-between;
