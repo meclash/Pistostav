@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-    <title>Odvoz odpadu</title>
+    <title>Výškove práce</title>
 </head>
 <body>
     <div class=site-wrapper>
@@ -16,55 +16,56 @@
 
             <nav class="nav">
                 
-            <a href="/index.html">
-                <img class="logo" src="images/home/logo.png" alt="Pistostav Logo">
-            </a>
-            
-            <div class="hamburger-menu">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times"></i>
-            </div>
+                <a href="/index.html">
+                    <img class="logo" src="/images/home/logo.png" alt="Pistostav Logo">
+                </a>
+                
+                <div class="hamburger-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
 
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a class="nav__link" href="/index.html">Domov</a>
-                </li>
-                <li class="nav__item dropdown">
-                    <a class="nav__link sub-menu__button">Služby <i class="fas fa-angle-down"></i></a>
-                    <ul class="sub-menu sub-menu__toggle ">
-                        <li class="nav__item">
-                            <a  href="/udrzba-zelene.html">Údržba zelene</a>
-                        </li>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="/index.html">Domov</a>
+                    </li>
+                    <li class="nav__item dropdown">
+                        <a class="nav__link sub-menu__button">Služby <i class="fas fa-angle-down"></i></a>
+                        <ul class="sub-menu sub-menu__toggle ">
+                            <li class="nav__item">
+                                <a  href="/sluzby/udrzba-zelene.html">Údržba zelene</a>
+                            </li>
 
-                        <li class="_nav__item">
-                            <a href="/vyskove-prace.html">Výškové práce</a>
-                        </li>
+                            <li class="_nav__item">
+                                <a href="/sluzby/vyskove-prace.html">Výškové práce</a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="/odvoz-odpadu.html">Odvoz odpadu</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="/sluzby/odvoz-odpadu.html">Odvoz odpadu</a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="/zemne-prace.html">Zemné a výkopové práce</a>
-                        </li>
-                        
-                        <li class="nav__item">
-                            <a href="/autodoprava.html">Autodoprava</a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="/sluzby/zemne-prace.html">Zemné a výkopové práce</a>
+                            </li>
+                            
+                            <li class="nav__item">
+                                <a href="/sluzby/autodoprava.html">Autodoprava</a>
+                            </li>
 
-                    </ul>
 
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="/blog.html">Blog</a>
-                </li>
-               
-                <li class="nav__item">
-                    <a class="nav__link kontakt-btn" href="#kontakt">Kontakt</a>
-                </li>
-            </ul>
+                        </ul>
 
-        </nav>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="/blog.html">Blog</a>
+                    </li>
+                   
+                    <li class="nav__item">
+                        <a class="nav__link kontakt-btn" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+
+            </nav>
 
             <div class="split split--hero">
                 <div class="split__item">
@@ -80,99 +81,153 @@
         </section>
 
         <main> 
-            <section class="odvoz-odpadu section--primary">
-                <h2 class="underline-title">Odvoz odpadu</h2>
+            <section class="sluzby section--primary" id="sluzby">
+
+                <h2 class="underline-title">Výškové práce</h2>
+
+
+                <div class="split split--sluzby">
+                    <div class="sluzby__text">
+                        <h3>
+                            Špecializujeme sa na práce vo výškach a nad voľnou hĺbkou.
+                        </h3>
+
+                        <p>
+                            Výškové práce vykonávame po celom Slovensku a po dohode <b>vieme prísť kamkoľvek</b>. 
+                        </p>
+
+                        <p>
+                            Všetci naši pracovníci sú <b>profesionáli s dlhoročnými skúsenosťami</b> v danom obore.
+                        </p>
+        
+                        <p>
+                           Každú zákazku vykonávame v súlade s bezpečnostnými opatreniami, <b>iba s certifikovanými zariadeniami</b> a na každú prácu máme tie správne nástroje a techniky.
+                        </p>
+
+                        <p>
+                            Ponúkame rôzne elektrikárske práce pomocou horolezeckej techniky na neprístupných miestach v zmysle vyhlášky č. 508/2009 Z. z. § 21, §22, § 23, ktorou sa ustanovujú podrobnosti na zaistenie bezpečnosti a ochrany zdravia pri práci.
+                        </p>
+
+                        <p id="infoText">
+                            <br><i class="fas fa-info-circle"></i> Celý náš tím sa pravidelne preškoluje na prácu vo výškach v zmysle vyhlášky SUBP a SBÚ č. 374 / 1990 Zb. 
+                        </p>
+                    
+
+                    </div>
+
+                    <div class="sluzby__heroimage-box">
+                        <img class="sluzby__heroimage" src="/images/sluzby/vyskove-prace/vyskove-prace-hero.webp" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="section--primary">
+                <h2 class="underline-title">Ponúkame</h2>
 
                 <div>
-                    <div class="sluzby__text-container">
-                        <div class="sluzby__textbox">
+                    <div class="sluzby__list-container">
+                        <div class="sluzby__box">
 
-                            <ul class="sluzby__text">
-                                <li>keramika</li>
-                                <li>tehly</li>
-                                <li>obkladačky</li>
-                                <li>betón</li>
-                                <li>dlaždice</li>
-                                <li>zemina s kamenivom</li>
-                                <li>zmesi tehál, obkladačiek, dlaždíc a keramiky</li>
-                                <li>drevo</li>
-                                <li>sklo</li>
-                                <li>plast</li>
-                                <li>kov</li>
-                                <li>papier</li>
-                                <li>lepenka</li>
-                                <li>zmiešané odpady</li>
-                                <li>izolačné materiály</li>
-                                <li>tráva</li>
-                                <li>burina</li>
-                                <li>konáre</li>
-                                <li>lístie</li>
-                                <li>stromové pne</li>
-                                <li>piliny</li>
-                                <li>štiepka</li>
-                                <li>komplet BIO odpad zo záhrady, parkov</li>
-                                
+                            <ul class="sluzby__list">
+                                <li>Montáž vzduchotechniky</li>
+                                <li>Montáž ochranných sietí a konštrukcií proti pádu materiálu z výšky</li>
+                                <li>Montáž sietí proti vtáctvu</li>
+                                <li>Montáž reklamných plôch a bannerov</li>
+                                <li>Montáž zábradlí, oceľových konštrukcií vo výškach</li>
+                                <li>Montáž a demontáž vianočnej výzdoby</li>
+                                <li>Montáž makiet dravcov proti holubom</li>
+                                <li>Stavebné práce vo výškach</li>
+                                <li>Umývanie skiel, fasád, skleníkov</li>
+                                <li>Čistenie odkvapov, antén, satelitov</li>
+                                <li>Čistenie striech</li>
+                                <li>Čistenie reklamných plôc</li>
+                                <li>Odstraňovanie všetkých nečistôt</li>
+                                <li>Malovanie vo výškach</li>
+                                <li>Natieranie oceľových konštrukcií</li>
+                                <li>Natieranie mostov</li>
+                                <li>Natieranie konštrukcií v halách</li>
+                                <li>Natieranie antén a vysielačov</li>
+                                <li>Nátery a ošetrovanie drevených pilierov</li>
+                                <li>Nátery stožiarov vysokého napätia</li>
+                                <li>Antikorózne nátery</li>
+
                             </ul>
 
                                 
                         </div>
 
+
+
+
                         
                     </div>
+
+                
                 </div>
+
+            </section>
+
+            <section class="section--primary">
+
+                <h2 class="underline-title">Galéria</h2>
+
+
 
                 <div class="gallery">
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-1.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-1.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-2.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-2.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-3.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-3.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-4.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-4.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-5.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-5.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-6.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-6.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-7.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-7.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-8.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-8.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-9.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-9.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-10.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-10.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-11.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-11.jpg">
                     </div>
 
                     <div class="gallery__image-container">
-                        <img class="gallery__image" src="/images/sluzby/odvoz-odpadu/odvoz-odpadu-12.jpg">
+                        <img class="gallery__image" src="/images/sluzby/vyskove-prace/vyskove-prace-12.jpg">
                     </div>
 
                 </div>
 
-    
+
+
             </section>
 
          
@@ -254,6 +309,6 @@
 
     </div>
 
-    <script src="app.js"></script>  
+    <script src="/app.js"></script>  
 </body>
 </html>
