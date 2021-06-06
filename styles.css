@@ -351,6 +351,7 @@ ABOUT US SECTION
     color: var(--neutralgray-700);
     text-align: center;
     padding: auto ;
+    margin: 2rem 0;
    
 }
 
@@ -371,22 +372,13 @@ ABOUT US SECTION
 }
 
 
-.about-us__picbox{
-    width: 100%;
-    height: 100%;
-
-}
-
 .about-us__pic{
     position: relative;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 
 }
-
-
-
 
 
 /* SLIDER */
@@ -414,7 +406,7 @@ ABOUT US SECTION
 .CSSgal .prevNext {
 	position: absolute;
 	z-index: 1;
-	top: 60%;
+	top: 55%;
 	width: 100%;
 	height: 0;
 }
@@ -1007,10 +999,10 @@ FOOTER SECTION
 
 .sluzby__text{
     margin: auto;
+    margin-top: 0;
     width: 90%;
     max-width: 40rem;
     font-size: var(--text-large);
-
 }
 
 
@@ -1019,6 +1011,7 @@ FOOTER SECTION
     margin: auto;
     border-radius: 8px;
     color: var(--neutralgray-700);
+    max-width: 1400px;
 
 }
 
@@ -1034,7 +1027,12 @@ FOOTER SECTION
     
 }
 
-.sluzby__litt > ul {
+.sluzby__list{
+    padding: 1rem 0 4rem;
+    
+}
+
+.sluzby__list > ul {
     list-style: none;
 }
 
@@ -1044,6 +1042,7 @@ FOOTER SECTION
     background-repeat: no-repeat;
     max-width: 20rem;
     font-size: var(--text-base);
+    color: var(--neutralgray-200);
 }
 
 .sluzby__heroimage-box{
@@ -1062,6 +1061,71 @@ FOOTER SECTION
 /*****
 BLOG
 *****/
+
+.hero__blog{
+    background-color: var(--neutralgray-200);
+}
+
+.nav__blog{
+    padding-bottom: 3rem;
+}
+
+
+.blog{
+    width: 90%;
+    margin: auto;
+    max-width: 38rem;
+    padding-bottom: 3rem;
+}
+
+.blog p {
+    padding-bottom: 1.5rem;
+    font-family: 'Roboto Slab';
+    font-size: var(--text-base);
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--neutralgray-600);
+    letter-spacing: 0.25px;
+
+}
+
+.blog__date{
+    font-size: var(--text-small);
+    margin-top: 2rem;
+}
+
+
+.blog__title{
+    text-align: left;
+    color: var(--neutralgray-700);
+    font-size: var(--text-3xl);
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+.blog__title-image{
+    width: 90%;
+    max-width: 54rem;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07), 0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
+}
+
+.blog p::after{
+    content:"\a";
+    white-space: pre;
+}
+
+.blog__body-image{
+    width: 90%;
+    max-width: 38rem;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07), 0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+}
+
 
 .blogcards{
     
@@ -1167,6 +1231,12 @@ BLOG
     .split--benefits{
         column-count: 2;
     }
+
+    .split--services{
+        display: grid;
+        column-count: 2;
+        
+    }
 }
 
 
@@ -1259,9 +1329,13 @@ BLOG
         position: relative;
     }
 
+    .about-us .underline-title{
+        padding-top: 0;
+    }
+
     .split--about-us{
         display: grid;
-        grid-template-columns: 0.4fr 0.6fr;
+        grid-template-columns: 0.5fr 0.6fr;
     }
 
     .about-us__text{
@@ -1305,15 +1379,14 @@ BLOG
     }
 
     .split--sluzby{
-        /* display: flex;
-        flex-direction: row; */
         display: grid;
         grid-template-columns: 1fr 1fr;
-        max-width: 90%;
+        width: 90%;
         margin: auto;
         column-gap: 2rem;
         padding-bottom: 3rem;
         justify-content: space-between;
+        max-width: 1400px;
 
     }
 
@@ -1343,6 +1416,8 @@ BLOG
 
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin: auto;
+        max-width: 1400px;
     }
 
     .sluzby__list {
