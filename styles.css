@@ -1004,9 +1004,11 @@ FOOTER SECTION
     margin: auto;
     margin-top: 0;
     width: 90%;
-    max-width: 40rem;
-    font-size: var(--text-large);
+    max-width: 30rem;
+    font-size: var(--text-xl);
 }
+
+
 
 
 
@@ -1022,7 +1024,7 @@ FOOTER SECTION
 
 
 .sluzby__text > p {
-    font-size: var(--text-base);
+    font-size: var(--text-large);
     margin-bottom: 1rem;
 }
 
@@ -1134,9 +1136,6 @@ BLOG
 }
 
 
-.blogcards{
-    
-}
 
 .blogcard{
     position: relative;
@@ -1313,9 +1312,6 @@ BLOG
 
     }
 
-    .split--services{
-        
-    }
 
     .cards__wrapper{
         display: grid;
