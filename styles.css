@@ -665,23 +665,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* 5 services cards */
 
 .card--udrzba{
-    background-image: url('/images/home/udrzba-zelene.webp');
+    background-image: url('./images/home/udrzba-zelene.webp');
 }
 
 .card--vyskove{
-    background-image: url('/images/home/vyskove-prace.webp');
+    background-image: url('./images/home/vyskove-prace.webp');
 }
 
 .card--odpad{
-    background-image:url('/images/home/odvoz-odpadu.webp')
+    background-image:url('./images/home/odvoz-odpadu.webp')
 }
 
 .card--vykopove{
-    background-image: url('/images/home/vykopove-prace.webp');
+    background-image: url('./images/home/vykopove-prace.webp');
 }
 
 .card--preprava{
-    background-image: url('/images/home/preprava.webp');
+    background-image: url('./images/home/preprava.webp');
 }
 
 
