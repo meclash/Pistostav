@@ -1323,9 +1323,7 @@ BLOG
         position: relative;
     }
 
-    .about-us .underline-title{
-        padding-top: 0;
-    }
+   
 
     .split--about-us{
         display: grid;
