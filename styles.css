@@ -1045,7 +1045,7 @@ FOOTER SECTION
 
 .sluzby__list > li{
     padding: 0.3rem 0 1rem 3rem; 
-    background-image: url('../images/home/_check-circle.png');
+    background-image: url('./images/home/check-circle.png');
     background-repeat: no-repeat;
     max-width: 20rem;
     font-size: var(--text-base);
