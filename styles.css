@@ -541,11 +541,9 @@ BENEFITS SECTION
     display: flex;
     flex-direction: column;
     padding: 1.5rem 0;
-    max-width: 20rem;
     margin-left: 5vw;
-
-   
 }
+
 
 .benefits__icon{
     color: var(--mainorange-4);
@@ -1004,7 +1002,7 @@ FOOTER SECTION
     margin: auto;
     margin-top: 0;
     width: 90%;
-    max-width: 30rem;
+    max-width: 40rem;
     font-size: var(--text-xl);
 }
 
@@ -1240,6 +1238,12 @@ BLOG
         column-count: 2;
         column-gap: 2rem;
     }
+
+    .benefits__item{
+        max-width: 20rem;
+    }
+
+    
 }
 
 
@@ -1248,6 +1252,8 @@ BLOG
         max-width: 1400px;
         margin: auto;
     }
+
+    
 
     
 
