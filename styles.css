@@ -88,7 +88,7 @@ h2{
 }
 
 h3{
-    font-size: var(--text-base);
+    font-size: var(--text-large);
     font-weight: var(--fw-normal);
     margin-bottom: 1rem;
 }
