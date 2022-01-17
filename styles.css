@@ -1058,9 +1058,8 @@ FOOTER SECTION
 
 .sluzby__heroimage{
     width: 100%;
-    max-width: 40rem;
+    max-width: 45rem;
     margin: auto;
-    border-radius: 8px;
     box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07), 0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
 
 }
@@ -1373,9 +1372,9 @@ BLOG
 
     .split--sluzby{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 90%;
+        grid-template-columns: 1fr  2fr;
         margin: auto;
+        width: 90%;
         column-gap: 2rem;
         padding-bottom: 3rem;
         justify-content: space-between;
