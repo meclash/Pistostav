@@ -10,6 +10,7 @@ hamburgerMenu.addEventListener("click", function () {
     nav.classList.toggle("menu-open");
 })
 
+
 // contact button closes mobile menu
 
 let kontaktBtn = document.querySelector(".kontakt-btn")
@@ -57,5 +58,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
 
 
