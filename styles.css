@@ -126,8 +126,17 @@ REUSABLE STYLES
     text-decoration: underline;
     text-decoration-color: var(--mainyellow-1);
     text-decoration-thickness: 0.5rem;
-    text-underline-offset: 0.75rem;
 }
+
+.underline-text {
+    text-decoration: underline ;
+    text-decoration-color: var(--mainyellow-1);
+    text-decoration-thickness: 0.35rem;
+    text-underline-offset: 0.25rem;
+    margin-left: 0;
+}
+
+
 
 .split{
     display:flex;
@@ -349,7 +358,7 @@ ABOUT US SECTION
 .about-us__description{
     font-size: var(--text-large);
     color: var(--neutralgray-700);
-    text-align: center;
+    text-align: left;
     padding: auto ;
     margin: 2rem 0;
    
