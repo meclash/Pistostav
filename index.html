@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="flickity.css" media="screen">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -110,7 +111,7 @@
                                 </svg>
 
                                 <div>
-                                    údržba zelene
+                                    údržba zelene a verejných priestranstiev
                                 </div>
 
                     
@@ -125,7 +126,7 @@
                                 </svg>
 
                                 <div>
-                                    výškové práce
+                                    výškové práce, pílenie stromov a arboristika
                                 </div>
 
                     
@@ -140,7 +141,7 @@
                                 </svg>
 
                                 <div>
-                                    odvoz odpadu
+                                    odvoz klasického, stavebné a bio odpadu
                                 </div>
 
                     
@@ -155,7 +156,7 @@
                                 </svg>
 
                                 <div>
-                                    zemné a výkopové práce
+                                    zemné, výkopové a búracie práce
                                 </div>
 
                     
@@ -170,7 +171,7 @@
                                 </svg>
 
                                 <div>
-                                    autodoprava
+                                    autodoprava a preprava materiálu
                                 </div>
 
                     
@@ -179,55 +180,38 @@
 
                     
                     </ul>
+
+                <a href="/o-nas.html" class="about-us__button" >Viac <span>&rarr;</span> </a>
+
+
                     
 
                 </div>
+
+                <div class="main-carousel"
+                     data-flickity='{ "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img src="/images/home/about-us_pic-1.webp">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/home/about-us_pic-2.webp">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/home/about-us_pic-3.webp">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/home/about-us_pic-4.webp">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="/images/home/about-us_pic-5.webp">
+                    </div>
+                    
+                </div>
+
             
                 
 
-                <div class="CSSgal">
-
-                    <s id="s1"></s> 
-                    <s id="s2"></s>
-                    <s id="s3"></s>
-                    <s id="s4"></s>
-                    <s id="s5"></s>
-
-                    
-                    <div class="slider">
-                        <img class="about-us__pic" src="./images/home/about-us_pic-5.webp">
-
-                        <img class="about-us__pic" src="./images/home/about-us_pic-1.webp">
-                    
-                        <img class="about-us__pic" src="./images/home/about-us_pic-2.webp">
-                    
-                        <img class="about-us__pic" src="./images/home/about-us_pic-3.webp">
-
-                        <img class="about-us__pic" src="./images/home/about-us_pic-4.webp">
-
-                        
-                    </div>
-                    
-                    <div class="prevNext">
-                        
-                        <div><a href="#s5"></a><a href="#s2"></a></div>
-                        <div><a href="#s1"></a><a href="#s3"></a></div>
-                        <div><a href="#s2"></a><a href="#s4"></a></div>
-                        <div><a href="#s3"></a><a href="#s5"></a></div>
-                        <div><a href="#s4"></a><a href="#s1"></a></div>
-
-
-                    </div>
-                    
-                    <div class="bullets">
-                        <a href="#s1"></a>
-                        <a href="#s2"></a>
-                        <a href="#s3"></a>
-                        <a href="#s4"></a>
-                        <a href="#s5"></a>
-                    </div>
-                    
-                </div>
+            
 
             </div>
 
@@ -558,6 +542,7 @@
     </section>
 
 
-    <script src="./app.js"></script>
+    <script src="/flickity.pkgd.js"></script>
+    <script src="/app.js"></script>
 </body>
 </html>
