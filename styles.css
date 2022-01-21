@@ -428,7 +428,7 @@ BENEFITS SECTION
 
 .benefits__description{
     color: var(--neutralgray-400);
-    font-size: var(--text-base);
+    font-size: var(--text-large);
 }
 
 .benefits__image{
