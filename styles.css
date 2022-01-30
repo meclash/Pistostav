@@ -885,8 +885,8 @@ REVIEWS SECTION
 }
 
 .review__description{
-    font-family: "Roboto Slab";
-    font-size: var(--text-base);
+    font-size: var(--text-large);
+    font-weight: var(--fw-normal);
     display: flex;
     justify-content: center;
     align-items:center ;
@@ -1250,10 +1250,9 @@ BLOG
     color: var(--neutralgray-700);
     font-family: 'Kanit', sans-serif;
     font-size: var(--text-large);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-medium);
     text-align: left;
     position: relative;
-    font-family: "Roboto Slab";
 }
 
 .blogcard__button{
