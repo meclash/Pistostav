@@ -59,7 +59,7 @@ a{
 FONTS
 ****/
 
-/* @font-face {
+@font-face {
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 400;
@@ -94,7 +94,7 @@ FONTS
     src: local('Kanit'),
          url('./fonts/kanit-v11-latin-ext_latin-900.woff2') format('woff2');
 }   
- */
+
 
 
 
@@ -533,7 +533,7 @@ HERO SECTION
     bottom:0;
     width: 100%;
     height: auto;
-    max-width: 30rem;
+    max-width: 480px;
     margin: auto;
     
 }
