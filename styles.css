@@ -59,13 +59,13 @@ a{
 FONTS
 ****/
 
-@font-face {
+/* @font-face {
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: local('Kanit'),
-         url('./fonts/kanit-v11-latin-ext_latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/kanit-v11-latin-ext_latin-regular.woff2') format('woff2'); 
 }
   
 @font-face {
@@ -74,7 +74,7 @@ FONTS
     font-weight: 500;
     font-display: swap;
     src: local('Kanit'),
-        url('./fonts/kanit-v11-latin-ext_latin-500.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/kanit-v11-latin-ext_latin-500.woff2') format('woff2'); 
 }
  
 @font-face {
@@ -83,7 +83,7 @@ FONTS
     font-weight: 700;
     font-display: swap;
     src: local('Kanit'),
-         url('./fonts/kanit-v11-latin-ext_latin-700.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/kanit-v11-latin-ext_latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -92,9 +92,9 @@ FONTS
     font-weight: 900;
     font-display: swap;
     src: local('Kanit'),
-         url('./fonts/kanit-v11-latin-ext_latin-900.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./fonts/kanit-v11-latin-ext_latin-900.woff2') format('woff2');
 }   
-
+ */
 
 
 
