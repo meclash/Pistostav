@@ -56,6 +56,46 @@ a{
 }
 
 /*****
+FONTS
+****/
+
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/kanit-v11-latin-ext_latin-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+  
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('../fonts/kanit-v11-latin-ext_latin-500.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+ 
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/kanit-v11-latin-ext_latin-700.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/kanit-v11-latin-ext_latin-900.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+
+
+
+
+/*****
 GLOBAL STYLES
 ****/
 
@@ -110,6 +150,8 @@ span {
     transition: 0.2s;
     display: inline-block;
 }
+
+
 
 
 /*! Flickity v2.3.0
