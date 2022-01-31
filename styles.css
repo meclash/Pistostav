@@ -822,6 +822,7 @@ REVIEWS SECTION
 
 .reviews__image{
     width: 100%;
+    height: auto;
     margin: auto;
     max-width: 40rem;
 }
@@ -973,6 +974,7 @@ REVIEWS SECTION
 
 .references__image{
     width: 100%;
+    height: auto;
     max-width: 10rem;
     margin: auto;
     position: relative;
