@@ -531,9 +531,9 @@ HERO SECTION
 .hero__image{
     position: relative;
     bottom:0;
-    width: 30rem;
-    height: 30rem;
     width: 100%;
+    height: auto;
+    max-width: 30rem;
     margin: auto;
     
 }
@@ -640,9 +640,9 @@ BENEFITS SECTION
 
 .benefits__image{
     margin: 2rem auto 0;
-    height: 787px;
-    width: 1400px;
     width: 100%;
+    height: auto;
+    max-width: 1400px;
 }
 
 /*****
