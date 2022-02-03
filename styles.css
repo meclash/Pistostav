@@ -434,6 +434,7 @@ ABOUT US SECTION
     overflow: hidden;
     max-width: 1400px;
     margin: auto;
+    position: relative;
 
     
 }
@@ -484,6 +485,7 @@ ABOUT US SECTION
 .about-us__image{
     width: 100%;
     height: auto;
+    
 } 
 
 
@@ -626,7 +628,7 @@ SERVICES SECTION
 
 .about-us__button{
     display: block;
-    margin: 2rem 0;
+    margin: 2rem 0 ;
     max-width: 30rem;
     text-align: center;
     color: var(--neutralgray-700);
@@ -1398,6 +1400,20 @@ BLOG
         overflow: hidden;
     }
 
+    .about-us__button{
+        margin-bottom: 15rem;
+
+    }
+
+
+
+    .about-us__image{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom:0;
+        padding-top: 10rem;
+} 
 
     
 
