@@ -520,7 +520,9 @@ BENEFITS SECTION
     color: var(--neutralgray-200);
     font-family: 'Kanit', sans-serif;
     margin: 1rem 0;
-    font-size: var(--text-xl);
+    font-size: var(--text-large);
+    text-transform: uppercase;
+    font-weight: var(--fw-medium);
 }
 
 .benefits__description{
@@ -530,7 +532,7 @@ BENEFITS SECTION
 
 .benefits__image{
     margin: 2rem auto 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     max-width: 1400px;
 }
@@ -588,10 +590,11 @@ SERVICES SECTION
 .card__title{
     color: var(--neutralgray-200);
     font-family: 'Kanit', sans-serif;
-    font-size: var(--text-xl);
+    font-size: var(--text-large);
     font-weight: var(--fw-medium);
     text-align: center;
     position: relative;
+    text-transform: uppercase;
 }
 
 .card__description{
